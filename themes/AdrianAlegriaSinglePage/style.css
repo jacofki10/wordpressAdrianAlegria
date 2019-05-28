@@ -1,1 +1,273 @@
-√
+/*
+ Theme Name: Dj Adrian Alegria
+ Author: Diego Arnes
+ Version: 1.0
+ */
+
+@import url("mask.css");
+
+/* ******  Custom Properties (variables) ********** */
+:root{
+    --main-font: 'Lato';
+    --alternate-font: sans-serif;
+    --font-size: 16px;
+    --line-height: 1.6;
+
+    --main-color: #ffffff;
+    --main-modal-color: rgba(255, 255, 255, 0.75);
+    --second-color: #000000;
+    --second-modal-color: rgba(0, 0, 0, 0.75);
+
+    --bg-color: #fff;
+    --bg-modal-color: rgba(255, 255, 255, 0.75);
+    --bg-alternative-color: #000000;
+    --border-color: #ddd;
+
+    --text-color: #333;
+    --title-color: var(--second-color);
+
+    --link-color: var(--main-color);
+    --link-hover-color: var(--second-color);
+
+    --max-width: 1200px;
+    --header-height: 5rem;
+
+    --logo-width: 4rem;
+    --logo-height:  4rem;
+    --logo-spacing: .5rem;
+
+    --nav-height: 64px;
+}
+
+/* ****** Reset Styles ********** */
+html{
+    font-family: var(--main-font), var(--alternate-font);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+body{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+a{
+    text-decoration: none;
+    color: var(--link-color);
+    transition: all .3s ease-out;
+}
+a:hover{
+    color: var(--link-hover-color);
+    text-decoration: none !important;
+    opacity: 0.3;
+}
+::selection{
+    background-color: var(--main-color);
+    color: var(--second-color) !important;
+}
+
+/* ****** Bootstrap Styles ********** */
+
+section h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+}
+
+.text-dark {
+    color: #000000 !important;
+  }
+.bg-dark {
+    background-color: #000000 !important;
+  }
+.navbar-brand {
+    margin-right: 0;
+}
+
+/* ****** My Styles ********** */
+
+body, html {
+    height: 100%;
+    width: 100%;
+  }
+
+/*Navigation mobile*/
+.LogoMobile{
+    max-width: 250px;
+    height: auto;
+}
+#navbarNav ul li a{
+    color: var(--second-color);
+    letter-spacing: .0625rem;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+/*Navigation Desktok*/
+.menu{
+    width: 85px;
+}
+.logo:hover, .logo--invert:hover{
+    opacity: 0.3;
+    transition: all .3s ease-out;
+}
+
+
+/*****INDEX******/
+
+/*Fondo*/
+.img-index {
+    /* The image used */
+  background-image: url("../images/fondo.adrianalegriafondo.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+  }
+/*latest album*/
+
+/*Radio*/
+.img-brand {
+  /* The image used */
+  background-image: url("../images/fondo.adrianalegriaThinking.jpg");
+  /* Full height */
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: right;
+  background-size: cover;
+  }
+
+/*photos*/
+
+/*Gigs*/
+.gigs{
+    border-bottom: 0.5mm ridge rgba(255, 255, 255, 0.6);
+}
+.gigs a, a:visited{
+    color: var(--second-color);
+}
+.dia{
+    font-size: 60px;
+    line-height: 1em;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+.mes span{
+    display: block;
+    font-size: 20px;
+}
+
+/*Stores*/
+.img-store {
+    /* The image used */
+    background-image: url("../images/fondo.adrianalegriaPower.jpg");
+    /* Full height */
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-size: cover;
+    }
+
+
+/*Booking*/
+.floating-label-form-group {
+position: relative;
+border-bottom: 1px solid #e9ecef;
+      }
+
+      .floating-label-form-group input,
+      .floating-label-form-group textarea {
+        font-size: 1.5em;
+        position: relative;
+        z-index: 1;
+        padding-right: 0;
+        padding-left: 0;
+        resize: none;
+        border: none;
+        border-radius: 0;
+        background: none;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+      }
+
+      .floating-label-form-group label {
+        font-size: 0.85em;
+        line-height: 1.764705882em;
+        position: relative;
+        z-index: 0;
+        top: 2em;
+        display: block;
+        margin: 0;
+        -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+        transition: top 0.3s ease, opacity 0.3s ease;
+        vertical-align: middle;
+        vertical-align: baseline;
+        opacity: 0;
+      }
+
+      .floating-label-form-group:not(:first-child) {
+        padding-left: 14px;
+        border-left: 1px solid #e9ecef;
+      }
+
+      .floating-label-form-group-with-value label {
+        top: 0;
+        opacity: 1;
+      }
+
+      .floating-label-form-group-with-focus label {
+        color: #18BC9C;
+      }
+
+form .row:first-child .floating-label-form-group {
+        border-top: 1px solid #e9ecef;
+}
+/*Footer*/
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-25px);
+		transform: translateY(-25px);
+	}
+}
+.anna:hover {
+	animation: bounce 2s;
+}
+
+
+/* ****** Media Queries Small ********** */
+@media (max-width: 350px){
+    .LogoMobile{
+        max-width: 200px;
+    }
+    .navbar-brand {
+        margin-right: 0;
+    }
+}
+
+/* ****** Media Queries Medium ********** */
+@media (max-width: 768px){
+    body { padding-top: 70px; }
+}
+
+/* ****** Media Queries Large ********** */
+@media (min-width: 992px){
+
+}
+
+/* ****** Media Queries ExtraLarge ********** */
+@media (min-width: 1200px){
+
+}
