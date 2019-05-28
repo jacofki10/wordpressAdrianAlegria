@@ -1,31 +1,33 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html style="--replace-offset:0%;" <?php language_attributes(); ?>>
 
 <head>
-  <?php wp_head(); ?>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <?php wp_head(); ?>
   <title>Adrian Alegria</title>
+  <!-- Custom styles Mask -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/mask.css'; ?>" type="text/css" media="screen">
   <!-- Custom styles Animate menu -->
-  <link rel="stylesheet" type="text/css" href="css/animateMenu.css" />
-  <script src="js/animateMenu/segment.min.js"></script>
-  <script src="js/animateMenu/ease.min.js"></script>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/animateMenu.css'; ?>" type="text/css" media="screen">
+  <script src="<?php echo get_template_directory_uri() . '/js/animateMenu/segment.min.js'; ?>" type="text/javascript"></script>
+  <script src="<?php echo get_template_directory_uri() . '/js/animateMenu/ease.min.js'; ?>" type="text/javascript"></script>
   <!--Scroll down menu-->
-  <script src="js/smooth-scroll.polyfills.js"></script>
+  <script src="<?php echo get_template_directory_uri() . '/js/smooth-scroll.polyfills.js'; ?>" type="text/javascript"></script>
   <!--Nav Color Change-->
-  <link rel="stylesheet" type="text/css" href="css/navColorChange.css" />
-  <script src="js/navColorChange.js"></script>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/navColorChange.css'; ?>" type="text/css" media="screen">
+  <script src="<?php echo get_template_directory_uri() . '/js/navColorChange.js'; ?>" type="text/javascript"></script>
   <!--Grid Scroll Effects-->
-  <link rel="stylesheet" type="text/css" href="css/gridLoadingEffects.css" />
-  <script src="js/gridLoadingEffects/modernizr.custom.js"></script>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/gridLoadingEffects.css'; ?>" type="text/css" media="screen">
+  <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/modernizr.custom.js'; ?>" type="text/javascript"></script>
 </head>
 
 <body id="home">
   <!-- Navigation mobile-->
   <nav class="navbar fixed-top d-lg-none bg-white ">
     <a class="col-10 navbar-brand no-gutters pl-sm-5 text-center" href="#home">
-      <img src="<?php echo get_theme_file_uri('images/AdrianAlegriaLogoNegro.png') ?> " class="LogoMobile" alt="AdrianAlegria Logo">
+      <img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/AdrianAlegriaLogoNegro.png" class="LogoMobile" alt="AdrianAlegria Logo">
     </a>
     <div id="menu-icon-wrapper" class="menu-icon-wrapper">
       <svg width="1000px" height="1000px">
@@ -108,9 +110,9 @@
     <div class="row m-0 pt-4">
       <!-- Navigation  desktop-->
       <nav class="col-3 d-none d-lg-block ">
-        <div><img src="images/AdrianAlegriaLogo.png" alt="AdrianAlegria Logo" class="img-fluid"></div>
+        <div><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/AdrianAlegriaLogo.png" alt="AdrianAlegria Logo" class="img-fluid"></div>
         <div class="menu fixed-top mt-5 ml-3 pt-5 ">
-          <div class="js-replace">
+          <div class="js-replace js-replace--reverse">
             <div class="js-replace__item js-replace__item--active">
               <div class="js-replace__content">
                 <a data-easing="easeInOutQuad" href="#home">

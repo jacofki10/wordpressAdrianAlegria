@@ -6,7 +6,7 @@
     <hr class="mb-3">
     <div class="row grid effect-2" id="grid">
       <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="images/everydayep.jpg" alt="">
+        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/everydayep.jpg" alt="">
         <div class="mask">
           <h2>EVERY DAY EP</h2>
           <h5 class="align-items-center">Adrian Alegria</h5>
@@ -14,7 +14,7 @@
         </div>
       </li>
       <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="images/why.jpg" alt="">
+        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/why.jpg" alt="">
         <div class="mask">
           <h2>WHY</h2>
           <h5 class="align-items-center">Adrian Alegria</h5>
@@ -22,7 +22,7 @@
         </div>
       </li>
       <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="images/ibizaclosing2017.jpg" alt="">
+        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/ibizaclosing2017.jpg" alt="">
         <div class="mask">
           <h2>WHY</h2>
           <h5 class="align-items-center">Adrian Alegria</h5>
@@ -30,7 +30,7 @@
         </div>
       </li>
       <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="images/servicedown.jpg" alt="">
+        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/servicedown.jpg" alt="">
         <div class="mask">
           <h2>WHY</h2>
           <h5 class="align-items-center">Adrian Alegria</h5>
@@ -38,7 +38,7 @@
         </div>
       </li>
       <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="images/nothingbut.jpg" alt="">
+        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/nothingbut.jpg" alt="">
         <div class="mask">
           <h2>WHY</h2>
           <h5 class="align-items-center">Adrian Alegria</h5>
@@ -46,7 +46,7 @@
         </div>
       </li>
       <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="images/myheart.jpg" alt="">
+        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/myheart.jpg" alt="">
         <div class="mask">
           <h2>WHY</h2>
           <h5 class="align-items-center">Adrian Alegria</h5>
@@ -144,6 +144,10 @@
   <div class="col-lg-12 mx-auto py-5">
     <h2 class="text-left pl-4 text-uppercase ">Gigs</h2>
     <hr class="mb-5">
+    <?php
+    $options = array('scope' => 'upcoming', 'limit' => 5);
+    echo gigpress_shows($options);
+    ?>
     <div class="px-0 py-4 gigs">
       <div class="row">
         <a href="" class="col-12 col-lg-9 p-0">
@@ -236,10 +240,10 @@
   <div class="col-lg-10 mx-auto py-5">
     <h2 class="col-md-10 col-md-text-right text-uppercase text-white mb-5">Stores</h2>
     <div class="col-md-7 p-0 mb-4  ml-auto">
-      <a href="https://itunes.apple.com/us/artist/adrian-alegria/id540608442"><img src="images/itunesMusic.png" alt="" class="img-fluid"></a>
+      <a href="https://itunes.apple.com/us/artist/adrian-alegria/id540608442"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/itunesMusic.png" alt="" class="img-fluid"></a>
     </div>
     <div class="col-md-7 p-0 mb-4  ml-auto">
-      <a href="https://www.beatport.com/artist/adrian-alegria/232753"><img src="images/beatportMusic.png" alt="" class="img-fluid"></a>
+      <a href="https://www.beatport.com/artist/adrian-alegria/232753"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/beatportMusic.png" alt="" class="img-fluid"></a>
     </div>
   </div>
 </section>

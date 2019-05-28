@@ -4,8 +4,6 @@
  Version: 1.0
  */
 
-@import url("mask.css");
-
 /* ******  Custom Properties (variables) ********** */
 :root{
     --main-font: 'Lato';
@@ -120,7 +118,7 @@ body, html {
 /*Fondo*/
 .img-index {
     /* The image used */
-  background-image: url("../images/fondo.adrianalegriafondo.jpg");
+  background-image: url("http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/fondo.adrianalegriafondo.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -132,7 +130,7 @@ body, html {
 /*Radio*/
 .img-brand {
   /* The image used */
-  background-image: url("../images/fondo.adrianalegriaThinking.jpg");
+  background-image: url("http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/fondo.adrianalegriaThinking.jpg");
   /* Full height */
   width: 100%;
   /* Center and scale the image nicely */
@@ -163,7 +161,7 @@ body, html {
 /*Stores*/
 .img-store {
     /* The image used */
-    background-image: url("../images/fondo.adrianalegriaPower.jpg");
+    background-image: url("http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/fondo.adrianalegriaPower.jpg");
     /* Full height */
     width: 100%;
     /* Center and scale the image nicely */
