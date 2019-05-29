@@ -2,9 +2,9 @@
 
 // DB structure
 $charset_collate = '';
-if ( ! empty( $wpdb->charset ) )
+if (!empty($wpdb->charset))
 	$charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";
-if ( ! empty( $wpdb->collate ) )
+if (!empty($wpdb->collate))
 	$charset_collate .= " COLLATE $wpdb->collate";
 
 global $gp_db;
@@ -74,7 +74,7 @@ PRIMARY KEY  (tour_id)
 // Default settings
 global $default_settings;
 $timezone = get_option('timezone_string', date_default_timezone_get());
-if(empty($timezone)) $timezone = 'UTC';
+if (empty($timezone)) $timezone = 'UTC';
 
 $default_settings = array(
 	'age_restrictions' => 'All Ages | All Ages/Licensed | No Minors',
@@ -86,6 +86,7 @@ $default_settings = array(
 	'category_exclude' => 0,
 	'country_view' => 'long',
 	'date_format_long' => 'l, F jS Y',
+	'date_format_long2' => 'l, F jS Y',
 	'date_format' => 'm/d/y',
 	'db_version' => GIGPRESS_DB_VERSION,
 	'default_artist' => '',
@@ -127,35 +128,32 @@ $default_settings = array(
 
 global $gpo;
 
-if( ! $gpo = get_option('gigpress_settings') )
-{
+if (!$gpo = get_option('gigpress_settings')) {
 	$gpo = $default_settings;
 }
 
-if(empty($gpo['buy_tickets_label']))
-{
+if (empty($gpo['buy_tickets_label'])) {
 	$gpo['buy_tickets_label'] = 'Buy Tickets';
 	update_option('gigpress_settings', $gpo);
 }
 
-if(empty($gpo['output_schema_json']) || (!empty($gpo['output_schema_json']) && $gpo['output_schema_json'] == 1))
-{
+if (empty($gpo['output_schema_json']) || (!empty($gpo['output_schema_json']) && $gpo['output_schema_json'] == 1)) {
 	$gpo['output_schema_json'] = 'y';
 	update_option('gigpress_settings', $gpo);
 }
 
 
-if(empty($gpo['timezone']))
-{
+if (empty($gpo['timezone'])) {
 	$gpo['timezone'] = $timezone;
 	update_option('gigpress_settings', $gpo);
 }
 
-function gigpress_install() {
+function gigpress_install()
+{
 
 	global $wpdb, $gp_db, $default_settings;
 
-	if($wpdb->get_var("SHOW TABLES LIKE '" . GIGPRESS_SHOWS . "'") != GIGPRESS_SHOWS) {
+	if ($wpdb->get_var("SHOW TABLES LIKE '" . GIGPRESS_SHOWS . "'") != GIGPRESS_SHOWS) {
 		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 		dbDelta($gp_db);
 		add_option('gigpress_settings', $default_settings);
@@ -165,12 +163,12 @@ function gigpress_install() {
 
 // Upgrade checks and functions
 
-if ( $gpo['db_version'] < GIGPRESS_DB_VERSION ) {
+if ($gpo['db_version'] < GIGPRESS_DB_VERSION) {
 
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 	dbDelta($gp_db);
 
-	switch($gpo['db_version']) {
+	switch ($gpo['db_version']) {
 		case "1.0":
 			gigpress_db_upgrade_110();
 			gigpress_db_upgrade_120();
@@ -203,11 +201,11 @@ if ( $gpo['db_version'] < GIGPRESS_DB_VERSION ) {
 
 	$gpo['db_version'] = GIGPRESS_DB_VERSION;
 	update_option('gigpress_settings', $gpo);
-
 }
 
 
-function gigpress_db_upgrade_110() {
+function gigpress_db_upgrade_110()
+{
 
 	global $wpdb;
 
@@ -218,39 +216,40 @@ function gigpress_db_upgrade_110() {
 	");
 
 	// Update each one's show_expire with its show_date
-	if($getshows) {
-		foreach($getshows as $show) {
+	if ($getshows) {
+		foreach ($getshows as $show) {
 			$wpdb->update(GIGPRESS_SHOWS, array('show_expire' => $show->show_date), array('show_id' => $show->show_id), array('%s'), array('%d'));
 		}
 	};
 
 	// Now set show_time to NA
 	$settime = $wpdb->update(GIGPRESS_SHOWS, array('show_time' => '00:00:01'), array('show_time' =>
-''));
-
+	''));
 }
 
 
-function gigpress_db_upgrade_120() {
+function gigpress_db_upgrade_120()
+{
 
 	global $wpdb;
 
 	// Set status for all shows and tours
 	$wpdb->update(GIGPRESS_SHOWS, array('show_status' => 'active'), array('show_status' => ''));
 	$wpdb->update(GIGPRESS_TOURS, array('tour_status' => 'active'), array('tour_status' => ''));
-
 }
 
 
-function gigpress_db_upgrade_130() {
+function gigpress_db_upgrade_130()
+{
 
 	global $gpo;
 	$gpo['date_format_long'] = $gpo['date_format'];
-
+	$gpo['date_format_long2'] = $gpo['date_format'];
 }
 
 
-function gigpress_db_upgrade_140() {
+function gigpress_db_upgrade_140()
+{
 
 	global $wpdb, $gpo;
 
@@ -267,7 +266,7 @@ function gigpress_db_upgrade_140() {
 	$venues = $wpdb->get_results("SELECT DISTINCT show_venue as venue_name, show_address as venue_address, show_locale as venue_city, show_country as venue_country, show_venue_phone as venue_phone, show_venue_url as venue_url FROM " . GIGPRESS_SHOWS . "", ARRAY_A);
 
 	// Insert them into the database
-	foreach($venues as $venue) {
+	foreach ($venues as $venue) {
 		$wpdb->insert(GIGPRESS_VENUES, $venue);
 		// Now re-associate the shows with their venues
 		$where = array(
@@ -288,10 +287,10 @@ function gigpress_db_upgrade_140() {
 	$gpo['related_date'] = 'now';
 	$gpo['widget_feeds'] = 1;
 	$gpo['widget_group_by_artist'] = 0;
-
 }
 
-function gigpress_db_upgrade_160() {
+function gigpress_db_upgrade_160()
+{
 
 	global $wpdb, $gpo;
 	$gpo['artist_link'] = 1;
@@ -301,10 +300,8 @@ function gigpress_db_upgrade_160() {
 	$artists = $wpdb->get_results(
 		"SELECT * FROM " . GIGPRESS_ARTISTS
 	);
-	if($artists)
-	{
-		foreach($artists as $artist)
-		{
+	if ($artists) {
+		foreach ($artists as $artist) {
 			$alpha = preg_replace("/^the /uix", "", strtolower($artist->artist_name));
 			$new_artist = array(
 				'artist_alpha' => $alpha
@@ -318,13 +315,10 @@ function gigpress_db_upgrade_160() {
 	$venues = $wpdb->get_results(
 		"SELECT * FROM " . GIGPRESS_VENUES
 	);
-	if($venues)
-	{
-		foreach($venues as $venue)
-		{
+	if ($venues) {
+		foreach ($venues as $venue) {
 			preg_match("/,[ ]?([A-Z]{2})$/u", $venue->venue_city, $matches);
-			if(is_array($matches))
-			{
+			if (is_array($matches)) {
 				$new_venue['venue_state'] = $matches[1];
 				$new_venue['venue_city'] = preg_replace("/,[ ]?[A-Z]{2}$/u", '', $venue->venue_city);
 				$where = array('venue_id' => $venue->venue_id);
@@ -332,18 +326,17 @@ function gigpress_db_upgrade_160() {
 			}
 		}
 	}
-
 }
 
-function gigpress_uninstall() {
+function gigpress_uninstall()
+{
 
 	delete_option('gigpress_settings');
 
 	global $wpdb;
 	$wpdb->query('DROP TABLE IF EXISTS . '
-	 . GIGPRESS_SHOWS . ', '
-	 . GIGPRESS_TOURS . ', '
-	 . GIGPRESS_VENUES . ', '
-	 . GIGPRESS_ARTISTS);
-
+		. GIGPRESS_SHOWS . ', '
+		. GIGPRESS_TOURS . ', '
+		. GIGPRESS_VENUES . ', '
+		. GIGPRESS_ARTISTS);
 }

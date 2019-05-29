@@ -21,6 +21,8 @@
   <!--Grid Scroll Effects-->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/gridLoadingEffects.css'; ?>" type="text/css" media="screen">
   <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/modernizr.custom.js'; ?>" type="text/javascript"></script>
+  <!--Instagram-->
+  <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/instafeed.js/instafeed.min.js'; ?>"></script>
 </head>
 
 <body id="home">

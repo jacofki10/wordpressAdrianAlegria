@@ -145,94 +145,9 @@
     <h2 class="text-left pl-4 text-uppercase ">Gigs</h2>
     <hr class="mb-5">
     <?php
-    $options = array('scope' => 'upcoming', 'limit' => 5);
+    $options = array('scope' => 'all', 'limit' => 5);
     echo gigpress_shows($options);
     ?>
-    <div class="px-0 py-4 gigs">
-      <div class="row">
-        <a href="" class="col-12 col-lg-9 p-0">
-          <div class="row">
-            <div class="row col-12 col-lg-4 justify-content-center mb-2 m-0">
-              <div class="p-1 dia mb-2"><span>28</span></div>
-              <div class="p-1 mes mb-2"><span>Dec</span><span>Fri</span></div>
-            </div>
-            <div class="col-12 col-lg-8 align-self-center font-weight-bold">
-              <h4>Totem, Villava(SP)</h4>
-            </div>
-          </div>
-        </a>
-        <div class="col-12 col-lg-3 align-self-center"><a href=""><i class="fas fa-angle-double-right "></i> comprar
-            entradas</a></div>
-      </div>
-    </div>
-    <div class="px-0 py-4 gigs">
-      <div class="row">
-        <a href="" class="col-12 col-lg-9 p-0">
-          <div class="row">
-            <div class="row col-12 col-lg-4 justify-content-center mb-2 m-0">
-              <div class="p-1 dia mb-2"><span>28</span></div>
-              <div class="p-1 mes mb-2"><span>Dec</span><span>Fri</span></div>
-            </div>
-            <div class="col-12 col-lg-8 align-self-center font-weight-bold">
-              <h4>Totem, Villava(SP)</h4>
-            </div>
-          </div>
-        </a>
-        <div class="col-12 col-lg-3 align-self-center"><a href=""><i class="fas fa-angle-double-right "></i> comprar
-            entradas</a></div>
-      </div>
-    </div>
-    <div class="px-0 py-4 gigs">
-      <div class="row">
-        <a href="" class="col-12 col-lg-9 p-0">
-          <div class="row">
-            <div class="row col-12 col-lg-4 justify-content-center mb-2 m-0">
-              <div class="p-1 dia mb-2"><span>28</span></div>
-              <div class="p-1 mes mb-2"><span>Dec</span><span>Fri</span></div>
-            </div>
-            <div class="col-12 col-lg-8 align-self-center font-weight-bold">
-              <h4>Totem, Villava(SP)</h4>
-            </div>
-          </div>
-        </a>
-        <div class="col-12 col-lg-3 align-self-center"><a href=""><i class="fas fa-angle-double-right "></i> comprar
-            entradas</a></div>
-      </div>
-    </div>
-    <div class="px-0 py-4 gigs">
-      <div class="row">
-        <a href="" class="col-12 col-lg-9 p-0">
-          <div class="row">
-            <div class="row col-12 col-lg-4 justify-content-center mb-2 m-0">
-              <div class="p-1 dia mb-2"><span>28</span></div>
-              <div class="p-1 mes mb-2"><span>Dec</span><span>Fri</span></div>
-            </div>
-            <div class="col-12 col-lg-8 align-self-center font-weight-bold">
-              <h4>Totem, Villava(SP)</h4>
-            </div>
-          </div>
-        </a>
-        <div class="col-12 col-lg-3 align-self-center"><a href=""><i class="fas fa-angle-double-right "></i> comprar
-            entradas</a></div>
-      </div>
-    </div>
-    <div class="px-0 py-4 gigs">
-      <div class="row">
-        <a href="" class="col-12 col-lg-9 p-0">
-          <div class="row">
-            <div class="row col-12 col-lg-4 justify-content-center mb-2 m-0">
-              <div class="p-1 dia mb-2"><span>28</span></div>
-              <div class="p-1 mes mb-2"><span>Dec</span><span>Fri</span></div>
-            </div>
-            <div class="col-12 col-lg-8 align-self-center font-weight-bold">
-              <h4>Totem, Villava(SP)</h4>
-            </div>
-          </div>
-        </a>
-        <div class="col-12 col-lg-3 align-self-center"><a href=""><i class="fas fa-angle-double-right "></i> comprar
-            entradas</a></div>
-      </div>
-    </div>
   </div>
 </section>
 <!--STORES-->
