@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php wp_head(); ?>
   <title>Adrian Alegria</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <!-- Custom styles Mask -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/mask.css'; ?>" type="text/css" media="screen">
   <!-- Custom styles Animate menu -->
@@ -113,7 +114,7 @@
       <!-- Navigation  desktop-->
       <nav class="col-3 d-none d-lg-block ">
         <div><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/AdrianAlegriaLogo.png" alt="AdrianAlegria Logo" class="img-fluid"></div>
-        <div class="menu fixed-top mt-5 ml-3 pt-5 ">
+        <div class="menu fixed-top mt-5 ml-3 ">
           <div class="js-replace js-replace--reverse">
             <div class="js-replace__item js-replace__item--active">
               <div class="js-replace__content">

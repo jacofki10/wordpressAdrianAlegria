@@ -153,17 +153,26 @@
 <!--STORES-->
 <section class="img-store container-fluid p-5 section--7 section" id="stores">
   <div class="col-lg-10 mx-auto py-5">
-    <h2 class="col-md-10 col-md-text-right text-uppercase text-white mb-5">Stores</h2>
+    <h2 class="col-md-10 col-md-text-right text-uppercase text-white">Stores</h2>
     <div class="col-md-7 p-0 mb-4  ml-auto">
       <a href="https://itunes.apple.com/us/artist/adrian-alegria/id540608442"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/itunesMusic.png" alt="" class="img-fluid"></a>
     </div>
     <div class="col-md-7 p-0 mb-4  ml-auto">
       <a href="https://www.beatport.com/artist/adrian-alegria/232753"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/beatportMusic.png" alt="" class="img-fluid"></a>
     </div>
+    <div class="col-md-7 p-0 mb-4  ml-auto">
+      <a href="https://www.traxsource.com/artist/118712/adrian-alegria"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/traxsourceLogo.png" alt="" class="img-fluid"></a>
+    </div>
+    <div class="col-md-7 p-0 mb-4  ml-auto">
+      <a href="https://www.junodownload.com/artists/Adrian+Alegria"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/junoDownloadLogo.png" alt="" class="img-fluid"></a>
+    </div>
   </div>
 </section>
 <!--Booking-->
+
+
 <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -241,4 +250,5 @@
       Deep Techno actually get to those variations of rhythms and transmit unique sensations to the public.</p>
   </div>
 </section>
+
 <?php get_footer(); ?>

@@ -106,6 +106,7 @@ body, html {
 /*Navigation Desktok*/
 .menu{
     width: 85px;
+    padding-top: 7rem;
 }
 .logo:hover, .logo--invert:hover{
     opacity: 0.3;
@@ -253,11 +254,19 @@ form .row:first-child .floating-label-form-group {
     .navbar-brand {
         margin-right: 0;
     }
+
 }
 
 /* ****** Media Queries Medium ********** */
 @media (max-width: 768px){
     body { padding-top: 70px; }
+     #stores > div > h2{
+        margin-bottom: 30px;
+    }
+.modal-body {
+    padding-top: 0;
+     padding-bottom: 0;
+}
 }
 
 /* ****** Media Queries Large ********** */
