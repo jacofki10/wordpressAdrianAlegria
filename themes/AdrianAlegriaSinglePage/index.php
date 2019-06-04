@@ -1,62 +1,13 @@
 <?php get_header(); ?>
 <!-- Latest Albums / Singles -->
-<section class="container p-5 section--2 section section--bg" id="music">
-  <div class="col-lg-11 mx-auto py-5">
+<section class="container-fluid p-3 section--2 section section--bg" id="music">
+  <div class="col-lg-10 mx-auto py-5">
     <h2 class="text-left text-uppercase text-dark">Latest Albums / Singles</h2>
     <hr class="mb-3">
-    <div class="row grid effect-2" id="grid">
-      <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/everydayep.jpg" alt="">
-        <div class="mask">
-          <h2>EVERY DAY EP</h2>
-          <h5 class="align-items-center">Adrian Alegria</h5>
-          <button onclick="window.location.href='https://www.beatport.com/release/every-day-ep/2214584'" type="button" class="btn btn-outline-light btn-lg rounded-0">Play</button>
-        </div>
-      </li>
-      <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/why.jpg" alt="">
-        <div class="mask">
-          <h2>WHY</h2>
-          <h5 class="align-items-center">Adrian Alegria</h5>
-          <button onclick="window.location.href='http://www.beatport.com/release/why/2202491'" type="button" class="btn btn-outline-light btn-lg rounded-0">Play</button>
-        </div>
-      </li>
-      <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/ibizaclosing2017.jpg" alt="">
-        <div class="mask">
-          <h2>WHY</h2>
-          <h5 class="align-items-center">Adrian Alegria</h5>
-          <button onclick="window.location.href='http://www.beatport.com/release/why/2202491'" type="button" class="btn btn-outline-light btn-lg rounded-0">Play</button>
-        </div>
-      </li>
-      <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/servicedown.jpg" alt="">
-        <div class="mask">
-          <h2>WHY</h2>
-          <h5 class="align-items-center">Adrian Alegria</h5>
-          <button onclick="window.location.href='http://www.beatport.com/release/why/2202491'" type="button" class="btn btn-outline-light btn-lg rounded-0">Play</button>
-        </div>
-      </li>
-      <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/nothingbut.jpg" alt="">
-        <div class="mask">
-          <h2>WHY</h2>
-          <h5 class="align-items-center">Adrian Alegria</h5>
-          <button onclick="window.location.href='http://www.beatport.com/release/why/2202491'" type="button" class="btn btn-outline-light btn-lg rounded-0">Play</button>
-        </div>
-      </li>
-      <li class="col-md-6 col-lg-4 view view-first">
-        <img class="img-fluid" src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/myheart.jpg" alt="">
-        <div class="mask">
-          <h2>WHY</h2>
-          <h5 class="align-items-center">Adrian Alegria</h5>
-          <button onclick="window.location.href='http://www.beatport.com/release/why/2202491'" type="button" class="btn btn-outline-light btn-lg rounded-0">Play</button>
-        </div>
-      </li>
-    </div>
+    <div class="row grid effect-2" id="grid"></div>
 </section>
 <!-- Radio -->
-<section class="img-brand container-fluid p-5 section--3 section" id="radio">
+<section class="img-brand container-fluid p-3 section--3 section" id="radio">
   <div class="col-lg-10 mx-auto py-5">
     <h2 class="text-left text-uppercase text-white">Radio Podcasts</h2>
     <hr class="mb-4">
@@ -76,8 +27,8 @@
 
 </section>
 <!--Photos-->
-<section class="container p-5 section--4 section section--bg" id="photos">
-  <div class="col-lg-11 mx-auto py-5">
+<section class="container-fluid p-3 section--4 section section--bg" id="photos">
+  <div class="col-lg-10 mx-auto py-5">
     <h2 class="text-left text-uppercase ">Photos</h2>
     <hr class="mb-5">
     <div id="rudr_instafeed" class="row">
@@ -140,9 +91,9 @@
   </div>
 </section>
 <!-- Gigs -->
-<section class="container p-5 text-center section--6 section section--bg" id="gigs">
-  <div class="col-lg-12 mx-auto py-5">
-    <h2 class="text-left pl-4 text-uppercase ">Gigs</h2>
+<section class="container-fluid p-3 text-center section--6 section section--bg" id="gigs">
+  <div class="col-lg-10 mx-auto py-5">
+    <h2 class="text-left text-uppercase ">Gigs</h2>
     <hr class="mb-5">
     <?php
     $options = array('scope' => 'all', 'limit' => 5);
@@ -151,9 +102,9 @@
   </div>
 </section>
 <!--STORES-->
-<section class="img-store container-fluid p-5 section--7 section" id="stores">
+<section class="img-store container-fluid p-3 section--7 section" id="stores">
   <div class="col-lg-10 mx-auto py-5">
-    <h2 class="col-md-10 col-md-text-right text-uppercase text-white">Stores</h2>
+    <h2 class="text-uppercase text-white">Stores</h2>
     <div class="col-md-7 p-0 mb-4  ml-auto">
       <a href="https://itunes.apple.com/us/artist/adrian-alegria/id540608442"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/itunesMusic.png" alt="" class="img-fluid"></a>
     </div>
@@ -169,10 +120,7 @@
   </div>
 </section>
 <!--Booking-->
-
-
 <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -228,17 +176,17 @@
   </div>
 </div>
 <!--About-->
-<section class="container p-5 section--7 section section--bg" id="about">
-  <div class="col-lg-11 mx-auto py-5">
+<section class="container-fluid p-3 section--7 section section--bg" id="about">
+  <div class="col-lg-10 mx-auto py-5">
     <h2 class="text-left text-uppercase ">About</h2>
     <hr class="mb-5">
     <p class="text-justify font-weight-bold">Adrian Alegria is a young DJ and producer with an amazing projection.</p>
-    <p>Born in Barakaldo (Vizcaya) currently living in Pamplona (Navarra). He started very young with the music, at 5
+    <p class="text-justify font-weight-bold">Born in Barakaldo (Vizcaya) currently living in Pamplona (Navarra). He started very young with the music, at 5
       years he began with the piano and continued studying until the 15. Attracted by electronic music, he started
       mixing on his own and did not take long to start his career as a DJ.</p>
-    <p>It has undergone major clubs in the Basque Country, Navarra and La Rioja as Txitxarro, Itzela -Dcibelia,
+    <p class="text-justify font-weight-bold">It has undergone major clubs in the Basque Country, Navarra and La Rioja as Txitxarro, Itzela -Dcibelia,
       Totem-Box, Movie Music Club, Pagoa, Crepusculo, Txuribeltz ... and also abroad, in London, in the Club No.65.</p>
-    <p>Today is superior sound technician and his first productions already have tapped by international artists such as
+    <p class="text-justify font-weight-bold">Today is superior sound technician and his first productions already have tapped by international artists such as
       Roger Sanchez, Cristian Varela, Tocadisco, De La Swing, Peter Gelderblom, Dennis Cruz ... and can be found on sale
       through seals that have already opted for it as Doppelgaenger, Ritmikal Records, Ausara Recordings, Selectechouse
       Label, DaMusic, Red Drum Music, Blum Recordings, Bullet Proof Records and so on. His productions are supported by
@@ -246,9 +194,8 @@
       electronic music his evolution has been very rapid. In 2011 he began his career in the radio at Espiral FM
       Pamplona, ​taking the title of radio technician, with its "Tribal Beats" program. Currently he works for ÁTICA FM
       in his new "Alegria Sessions" program.</p>
-    <p>His sets and productions are very personal. Melodies, tribal influences, atmospheres, mixed with bases House,
+    <p class="text-justify font-weight-bold">His sets and productions are very personal. Melodies, tribal influences, atmospheres, mixed with bases House,
       Deep Techno actually get to those variations of rhythms and transmit unique sensations to the public.</p>
   </div>
 </section>
-
 <?php get_footer(); ?>

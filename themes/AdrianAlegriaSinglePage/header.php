@@ -5,9 +5,10 @@
   <!-- Required meta tags -->
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <META HTTP-EQUIV="refresh" CONTENT="3600">
   <?php wp_head(); ?>
   <title>Adrian Alegria</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
   <!-- Custom styles Mask -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/mask.css'; ?>" type="text/css" media="screen">
   <!-- Custom styles Animate menu -->
@@ -22,9 +23,11 @@
   <!--Grid Scroll Effects-->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/gridLoadingEffects.css'; ?>" type="text/css" media="screen">
   <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/modernizr.custom.js'; ?>" type="text/javascript"></script>
-  <!--Instagram-->
-  <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/instafeed.js/instafeed.min.js'; ?>"></script>
 </head>
+<!--Spotify api-->
+<script src="<?php echo get_template_directory_uri() . '/js/spotify-web-api.js'; ?>" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
 
 <body id="home">
   <!-- Navigation mobile-->

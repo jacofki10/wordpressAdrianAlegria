@@ -51,9 +51,9 @@
  </script>
 
  <!-- Contact Form JavaScript -->
- <script src="<?php echo get_template_directory_uri(); ?>/js/contact_me.js"></script>
- <script src="<?php echo get_template_directory_uri(); ?>/js/freelancer.js"></script>
- <script src="<?php echo get_template_directory_uri(); ?>/js/jqBootstrapValidation.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/mail/contact_me.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/mail/freelancer.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/mail/jqBootstrapValidation.js"></script>
  <!-- Scroll down JavaScript -->
  <script>
    var scrollDown = new SmoothScroll('a[href*="#"]');
