@@ -24,14 +24,13 @@
       <button type="button" class="btn btn-outline-light btn-lg rounded-0">Show more</button>
     </div>
   </div>
-
 </section>
 <!--Photos-->
 <section class="container-fluid p-3 section--4 section section--bg" id="photos">
   <div class="col-lg-10 mx-auto py-5">
     <h2 class="text-left text-uppercase ">Photos</h2>
     <hr class="mb-5">
-    <div id="rudr_instafeed" class="row">
+    <div id="instafeed" class="row">
     </div>
   </div>
 </section>
@@ -106,16 +105,16 @@
   <div class="col-lg-10 mx-auto py-5">
     <h2 class="text-uppercase text-white">Stores</h2>
     <div class="col-md-7 p-0 mb-4  ml-auto">
-      <a href="https://itunes.apple.com/us/artist/adrian-alegria/id540608442"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/itunesMusic.png" alt="" class="img-fluid"></a>
+      <a href="https://itunes.apple.com/us/artist/adrian-alegria/id540608442"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/itunesMusic.png" alt="" class="img-fluid"></a>
     </div>
     <div class="col-md-7 p-0 mb-4  ml-auto">
-      <a href="https://www.beatport.com/artist/adrian-alegria/232753"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/beatportMusic.png" alt="" class="img-fluid"></a>
+      <a href="https://www.beatport.com/artist/adrian-alegria/232753"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/beatportMusic.png" alt="" class="img-fluid"></a>
     </div>
     <div class="col-md-7 p-0 mb-4  ml-auto">
-      <a href="https://www.traxsource.com/artist/118712/adrian-alegria"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/traxsourceLogo.png" alt="" class="img-fluid"></a>
+      <a href="https://www.traxsource.com/artist/118712/adrian-alegria"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/traxsourceLogo.png" alt="" class="img-fluid"></a>
     </div>
     <div class="col-md-7 p-0 mb-4  ml-auto">
-      <a href="https://www.junodownload.com/artists/Adrian+Alegria"><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/junoDownloadLogo.png" alt="" class="img-fluid"></a>
+      <a href="https://www.junodownload.com/artists/Adrian+Alegria"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/junoDownloadLogo.png" alt="" class="img-fluid"></a>
     </div>
   </div>
 </section>

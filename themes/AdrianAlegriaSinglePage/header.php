@@ -2,11 +2,40 @@
 <html style="--replace-offset:0%;" <?php language_attributes(); ?>>
 
 <head>
+
   <!-- Required meta tags -->
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <META HTTP-EQUIV="refresh" CONTENT="3600">
+  <META HTTP-EQUIV="refresh" CONTENT="500">
   <?php wp_head(); ?>
+  <?php
+  $curl = curl_init();
+  curl_setopt_array($curl, array(
+    CURLOPT_URL => "https://accounts.spotify.com/api/token",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => false,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => "grant_type=refresh_token&refresh_token=AQDJoLDvk5oAQQkQFfF1nb56AP1_AWsQWj-OP1YDz-Aw9gHmOl2Nz4X_zi2kHH_yHeOfR6nXdlZiYN8-qaHRgbVJCm-MW3hFvsfqdgFgxKACoD6Y2VPgVskNN5Aro50YebvRXw",
+    CURLOPT_HTTPHEADER => array(
+      "Authorization: Basic NzUzOTY3OTI0NTliNGZjNDg2MDI3OWU2Mzk3YmRlYmY6NWYyYzE1MGM4MGQxNDgwZmFkNTk3ODQxNmFiYjdhZTk="
+    ),
+  ));
+  $response = curl_exec($curl);
+  $response1 = json_decode($response, true);
+  $token = $response1['access_token'];
+  curl_close($curl);
+  ?>
+  <script>
+    var token = '<?php echo $token; ?>';
+  </script>
+
+  <!--Spotify api-->
+  <script src="<?php echo get_template_directory_uri() . '/js/spotify-web-api.js'; ?>" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <title>Adrian Alegria</title>
 
   <!-- Custom styles Mask -->
@@ -20,20 +49,18 @@
   <!--Nav Color Change-->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/navColorChange.css'; ?>" type="text/css" media="screen">
   <script src="<?php echo get_template_directory_uri() . '/js/navColorChange.js'; ?>" type="text/javascript"></script>
+
   <!--Grid Scroll Effects-->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/gridLoadingEffects.css'; ?>" type="text/css" media="screen">
   <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/modernizr.custom.js'; ?>" type="text/javascript"></script>
 </head>
-<!--Spotify api-->
-<script src="<?php echo get_template_directory_uri() . '/js/spotify-web-api.js'; ?>" type="text/javascript"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+
 
 <body id="home">
   <!-- Navigation mobile-->
   <nav class="navbar fixed-top d-lg-none bg-white ">
     <a class="col-10 navbar-brand no-gutters pl-sm-5 text-center" href="#home">
-      <img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/AdrianAlegriaLogoNegro.png" class="LogoMobile" alt="AdrianAlegria Logo">
+      <img src="https://adrianalegria.com/wp-content/uploads/2019/06/AdrianAlegriaLogoNegro.png" class="LogoMobile" alt="AdrianAlegria Logo">
     </a>
     <div id="menu-icon-wrapper" class="menu-icon-wrapper">
       <svg width="1000px" height="1000px">
@@ -116,7 +143,7 @@
     <div class="row m-0 pt-4">
       <!-- Navigation  desktop-->
       <nav class="col-3 d-none d-lg-block ">
-        <div><img src="http://adrianalegria.com/wp-content/themes/AdrianAlegriaSinglePage/images/AdrianAlegriaLogo.png" alt="AdrianAlegria Logo" class="img-fluid"></div>
+        <div><img src="https://adrianalegria.com/wp-content/uploads/2019/06/AdrianAlegriaLogo.png" alt="AdrianAlegria Logo" class="img-fluid"></div>
         <div class="menu fixed-top mt-5 ml-3 ">
           <div class="js-replace js-replace--reverse">
             <div class="js-replace__item js-replace__item--active">

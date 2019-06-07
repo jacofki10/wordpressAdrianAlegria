@@ -61,7 +61,7 @@
 
  <!-- Custom scripts for this template -->
  <!-- Optional JavaScript -->
- <script src="<?php echo get_template_directory_uri(); ?>/js/animateMenu/main.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/animateMenu/animateMenu.js"></script>
  </body>
 
  </html>
