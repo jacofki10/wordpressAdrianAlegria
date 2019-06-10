@@ -8,8 +8,7 @@ spotifyContainer = document.getElementById('grid'),
       for (i = 0; i < 6; i++) {
         spotifyContainer.innerHTML +=
           '<li class="col-md-6 col-lg-4 view view-first"><img class="img-fluid" src="' +
-          data.items[i].images[0].url +
-          '" alt=""><div class="mask"><h2>' +
+          data.items[i].images[0].url + '" alt="' + data.items[i].name + '"><div class="mask"><h2>' +
           data.items[i].name + '</h2><h5 class="align-items-center">' + data.items[i].artists[0].name + '</h5><button onclick="window.location.href=\'' +
           data.items[i].external_urls.spotify + '\'" type="button"  class="btn btn-outline-light btn-lg rounded-0">Play</button></div></li>';
       }
@@ -31,7 +30,7 @@ window.mishaProcessResult = function (data) {
         data.data[x].link +
         '" target="_blank"><img class="img-fluid" src="' +
         data.data[x].images.standard_resolution.url +
-        '"></a></div>';
+        '" alt="' + data.data[x].name + '" ></a></div>';
     }
   }
 };

@@ -44,20 +44,5 @@
  <script>
    var scrollDown = new SmoothScroll('a[href*="#"]');
  </script>
- <!-- Animate Menu -->
- <script src="<?php echo get_template_directory_uri(); ?>/js/animateMenu/animateMenu.js"></script>
- <!--Grid Scroll Effects-->
- <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/masonry.pkgd.min.js'; ?>" type="text/javascript"></script>
- <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/imagesloaded.js'; ?>" type="text/javascript"></script>
- <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/classie.js'; ?>" type="text/javascript"></script>
- <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/AnimOnScroll.js'; ?>" type="text/javascript"></script>
- <script>
-   new AnimOnScroll(document.getElementById('grid'), {
-     minDuration: 0.7,
-     maxDuration: 1.7,
-     viewportFactor: 0.4
-   });
- </script>
  </body>
-
  </html>

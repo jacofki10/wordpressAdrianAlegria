@@ -127,6 +127,9 @@ body, html {
   background-size: cover;
   }
 /*latest album*/
+#grid{
+    padding-left: 0px;
+}
 
 /*Radio*/
 .img-brand {

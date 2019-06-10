@@ -3,12 +3,12 @@
     text-align: center;
     cursor: default;
     padding: 0;
-    
+
  }
  .view .mask {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5;
  }
  .mask{
      height: 100%;
@@ -22,8 +22,18 @@
     position: relative;
     padding: 20px;
     margin: 20px 0 0 0;
-  
  }
+ @media (max-width: 550px){
+  .view h2 {
+    font-size: 22px;
+   padding: 10px;
+ }
+.view h5 {
+    font-size: 15px;
+    height: 20%;
+ }
+}
+
  .view h5 {
     position: relative;
     color: #fff;

@@ -4,7 +4,9 @@
   <div class="col-lg-10 mx-auto py-5">
     <h2 class="text-left text-uppercase text-dark">Latest Albums / Singles</h2>
     <hr class="mb-3">
-    <div class="row grid effect-2" id="grid"></div>
+    <div class="row grid effect-2">
+      <ul id="grid"></ul>
+    </div>
 </section>
 <!-- Radio -->
 <section class="img-brand container-fluid p-3 section--3 section" id="radio">

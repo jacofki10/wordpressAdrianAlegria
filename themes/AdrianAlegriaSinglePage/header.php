@@ -6,7 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <META HTTP-EQUIV="refresh" CONTENT="500">
+  <meta name="description" content="Oficial DJ Adrian Alegria Website, with his music, podtcast, photos and last gigs." />
   <?php wp_head(); ?>
   <?php
   $curl = curl_init();
@@ -42,6 +42,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/mask.css'; ?>" type="text/css" media="screen">
   <!-- Custom styles Animate menu -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/animateMenu.css'; ?>" type="text/css" media="screen">
+   <script src="<?php echo get_template_directory_uri(); ?>/js/animateMenu/animateMenu.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/js/animateMenu/segment.min.js'; ?>" type="text/javascript"></script>
   <script src="<?php echo get_template_directory_uri() . '/js/animateMenu/ease.min.js'; ?>" type="text/javascript"></script>
   <!--Scroll down menu-->
@@ -50,9 +51,6 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/navColorChange.css'; ?>" type="text/css" media="screen">
   <script src="<?php echo get_template_directory_uri() . '/js/navColorChange.js'; ?>" type="text/javascript"></script>
 
-  <!--Grid Scroll Effects-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/gridLoadingEffects.css'; ?>" type="text/css" media="screen">
-  <script src="<?php echo get_template_directory_uri() . '/js/gridLoadingEffects/modernizr.custom.js'; ?>" type="text/javascript"></script>
 </head>
 
 
