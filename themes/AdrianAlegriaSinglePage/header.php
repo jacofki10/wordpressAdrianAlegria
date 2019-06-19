@@ -2,11 +2,11 @@
 <html style="--replace-offset:0%;" <?php language_attributes(); ?>>
 
 <head>
-
   <!-- Required meta tags -->
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Oficial DJ Adrian Alegria Website, with his music, podtcast, photos and last gigs." />
+  <title>Adrian Alegria</title>
   <?php wp_head(); ?>
   <?php
   $curl = curl_init();
@@ -32,64 +32,49 @@
   <script>
     var token = '<?php echo $token; ?>';
   </script>
-
   <!--Spotify api-->
   <script src="<?php echo get_template_directory_uri() . '/js/spotify-web-api.js'; ?>" type="text/javascript"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <title>Adrian Alegria</title>
-
-  <!-- Custom styles Mask -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/mask.css'; ?>" type="text/css" media="screen">
-  <!-- Custom styles Animate menu -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/animateMenu.css'; ?>" type="text/css" media="screen">
-   <script src="<?php echo get_template_directory_uri(); ?>/js/animateMenu/animateMenu.js"></script>
-  <script src="<?php echo get_template_directory_uri() . '/js/animateMenu/segment.min.js'; ?>" type="text/javascript"></script>
-  <script src="<?php echo get_template_directory_uri() . '/js/animateMenu/ease.min.js'; ?>" type="text/javascript"></script>
-  <!--Scroll down menu-->
-  <script src="<?php echo get_template_directory_uri() . '/js/smooth-scroll.polyfills.js'; ?>" type="text/javascript"></script>
   <!--Nav Color Change-->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/navColorChange.css'; ?>" type="text/css" media="screen">
-  <script src="<?php echo get_template_directory_uri() . '/js/navColorChange.js'; ?>" type="text/javascript"></script>
-
+  <!-- Custom styles Animate menu -->
+  <link href="<?php echo get_template_directory_uri() . '/css/hamburgers.css'; ?>" rel="stylesheet">
+  <!-- Custom styles Mask -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/mask.css'; ?>" type="text/css" media="screen">
 </head>
-
 
 <body id="home">
   <!-- Navigation mobile-->
   <nav class="navbar fixed-top d-lg-none bg-white ">
-    <a class="col-10 navbar-brand no-gutters pl-sm-5 text-center" href="#home">
-      <img src="https://adrianalegria.com/wp-content/uploads/2019/06/AdrianAlegriaLogoNegro.png" class="LogoMobile" alt="AdrianAlegria Logo">
+    <a href="#home">
+      <img src="https://adrianalegria.com/wp-content/uploads/2019/06/AdrianAlegriaLogoNegro-300x63.png" class="LogoMobile" alt="AdrianAlegria Logo">
     </a>
-    <div id="menu-icon-wrapper" class="menu-icon-wrapper">
-      <svg width="1000px" height="1000px">
-        <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-        <path id="pathB" d="M 300 500 L 700 500"></path>
-        <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-      </svg>
-      <button class="menu-icon-trigger navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
-    </div>
+    <button class="hamburger hamburger--collapse " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
     <div class="collapse navbar-collapse text-center m-3 " id="navbarNav">
       <ul class="navbar-nav list-inline font-weight-bold">
         <li class="nav-item m-3">
-          <a data-easing="easeInOutQuad" href="#music" class="menu-icon-trigger navbar-toggler " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">MUSIC</a>
+          <a data-easing="easeInOutQuad" href="#music" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">MUSIC</a>
         </li>
         <li class="nav-item m-3">
-          <a data-easing="easeInOutQuad" href="#radio" class="menu-icon-trigger navbar-toggler " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">RADIO</a>
+          <a data-easing="easeInOutQuad" href="#radio" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">RADIO</a>
         </li>
         <li class="nav-item m-3">
-          <a data-easing="easeInOutQuad" href="#photos" class="menu-icon-trigger navbar-toggler " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">PHOTOS</a>
+          <a data-easing="easeInOutQuad" href="#photos" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">PHOTOS</a>
         </li>
         <li class="nav-item m-3">
-          <a data-easing="easeInOutQuad" href="#gigs" class="menu-icon-trigger navbar-toggler " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">GIGS</a>
+          <a data-easing="easeInOutQuad" href="#gigs" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">GIGS</a>
         </li>
         <li class="nav-item m-3">
-          <a data-easing="easeInOutQuad" href="#stores" class="menu-icon-trigger navbar-toggler " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">STORES</a>
+          <a data-easing="easeInOutQuad" href="#stores" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">STORES</a>
         </li>
         <li class="nav-item m-3">
-          <a data-easing="easeInOutQuad" href="#booking" class="menu-icon-trigger navbar-toggler " data-toggle="modal" data-target="#bookingModal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">BOOKING</a>
+          <a data-easing="easeInOutQuad" href="#booking" data-toggle="modal" data-target="#bookingModal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">BOOKING</a>
         </li>
         <li class="nav-item m-3">
-          <a data-easing="easeInOutQuad" href="#about" class="menu-icon-trigger navbar-toggler " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">ABOUT</a>
+          <a data-easing="easeInOutQuad" href="#about" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">ABOUT</a>
         </li>
         <div class="row d-flex my-2 ">
           <li class="list-inline-item mx-0 flex-fill">

@@ -93,9 +93,12 @@ body, html {
   }
 
 /*Navigation mobile*/
+.navbar > a{
+   width: max-content;
+    margin: auto;
+}
 .LogoMobile{
     max-width: 250px;
-    height: auto;
 }
 #navbarNav ul li a{
     color: var(--second-color);
@@ -130,7 +133,6 @@ body, html {
 #grid{
     padding-left: 0px;
 }
-
 /*Radio*/
 .img-brand {
   /* The image used */
@@ -141,7 +143,6 @@ body, html {
   background-position: right;
   background-size: cover;
   }
-
 /*photos*/
 
 /*Gigs*/
@@ -257,7 +258,6 @@ form .row:first-child .floating-label-form-group {
     .navbar-brand {
         margin-right: 0;
     }
-
 }
 
 /* ****** Media Queries Medium ********** */

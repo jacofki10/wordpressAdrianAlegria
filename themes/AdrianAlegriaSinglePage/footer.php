@@ -34,15 +34,19 @@
      </ul>
    </div>
  </footer>
- <?php wp_footer(); ?>
- <!-- Plugin JavaScript -->
+ <!---- Plugin JavaScript ---->
+ <!--Nav Color Change-->
+ <script src="<?php echo get_template_directory_uri() . '/js/navColorChange.js'; ?>"></script>
+ <!-- Scroll down JavaScript -->
+ <script src="<?php echo get_template_directory_uri() . '/js/smooth-scroll.polyfills.js'; ?>"></script>
+ <script>
+   var scrollDown = new SmoothScroll('a[href*="#"]');
+ </script>
  <!-- Contact Form JavaScript -->
  <script src="<?php echo get_template_directory_uri(); ?>/js/mail/contact_me.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/js/mail/freelancer.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/js/mail/jqBootstrapValidation.js"></script>
- <!-- Scroll down JavaScript -->
- <script>
-   var scrollDown = new SmoothScroll('a[href*="#"]');
- </script>
+ <?php wp_footer(); ?>
  </body>
+
  </html>

@@ -1,12 +1,9 @@
 <?php get_header(); ?>
 <!-- Latest Albums / Singles -->
-<section class="container-fluid p-3 section--2 section section--bg" id="music">
-  <div class="col-lg-10 mx-auto py-5">
-    <h2 class="text-left text-uppercase text-dark">Latest Albums / Singles</h2>
-    <hr class="mb-3">
-    <div class="row grid effect-2">
-      <ul id="grid"></ul>
-    </div>
+<section class="container-fluid p-5 section--2 section section--bg col-lg-10 mx-auto" id="music">
+  <h2 class="text-left text-uppercase text-dark">Latest Albums / Singles</h2>
+  <hr class="mb-3">
+  <ul id="grid" class="row"></ul>
 </section>
 <!-- Radio -->
 <section class="img-brand container-fluid p-3 section--3 section" id="radio">
@@ -28,12 +25,10 @@
   </div>
 </section>
 <!--Photos-->
-<section class="container-fluid p-3 section--4 section section--bg" id="photos">
-  <div class="col-lg-10 mx-auto py-5">
-    <h2 class="text-left text-uppercase ">Photos</h2>
-    <hr class="mb-5">
-    <div id="instafeed" class="row">
-    </div>
+<section class="container-fluid p-5 section--4 section section--bg  col-lg-10 mx-auto" id="photos">
+  <h2 class="text-left text-uppercase ">Photos</h2>
+  <hr class="mb-5">
+  <div id="instafeed" class="row">
   </div>
 </section>
 <!--Social Media-->
@@ -92,15 +87,13 @@
   </div>
 </section>
 <!-- Gigs -->
-<section class="container-fluid p-3 text-center section--6 section section--bg" id="gigs">
-  <div class="col-lg-10 mx-auto py-5">
-    <h2 class="text-left text-uppercase ">Gigs</h2>
-    <hr class="mb-5">
-    <?php
-    $options = array('scope' => 'all', 'limit' => 5);
-    echo gigpress_shows($options);
-    ?>
-  </div>
+<section class="container-fluid p-5 text-center section--6 section section--bg col-lg-10 mx-auto" id="gigs">
+  <h2 class="text-left text-uppercase ">Gigs</h2>
+  <hr class="mb-5">
+  <?php
+  $options = array('scope' => 'all', 'limit' => 5);
+  echo gigpress_shows($options);
+  ?>
 </section>
 <!--STORES-->
 <section class="img-store container-fluid p-3 section--7 section" id="stores">
@@ -177,26 +170,24 @@
   </div>
 </div>
 <!--About-->
-<section class="container-fluid p-3 section--7 section section--bg" id="about">
-  <div class="col-lg-10 mx-auto py-5">
-    <h2 class="text-left text-uppercase ">About</h2>
-    <hr class="mb-5">
-    <p class="text-justify font-weight-bold">Adrian Alegria is a young DJ and producer with an amazing projection.</p>
-    <p class="text-justify font-weight-bold">Born in Barakaldo (Vizcaya) currently living in Pamplona (Navarra). He started very young with the music, at 5
-      years he began with the piano and continued studying until the 15. Attracted by electronic music, he started
-      mixing on his own and did not take long to start his career as a DJ.</p>
-    <p class="text-justify font-weight-bold">It has undergone major clubs in the Basque Country, Navarra and La Rioja as Txitxarro, Itzela -Dcibelia,
-      Totem-Box, Movie Music Club, Pagoa, Crepusculo, Txuribeltz ... and also abroad, in London, in the Club No.65.</p>
-    <p class="text-justify font-weight-bold">Today is superior sound technician and his first productions already have tapped by international artists such as
-      Roger Sanchez, Cristian Varela, Tocadisco, De La Swing, Peter Gelderblom, Dennis Cruz ... and can be found on sale
-      through seals that have already opted for it as Doppelgaenger, Ritmikal Records, Ausara Recordings, Selectechouse
-      Label, DaMusic, Red Drum Music, Blum Recordings, Bullet Proof Records and so on. His productions are supported by
-      large artists as Marco Carola, Luciano, Dennis Cruz, Joseph Capriati or Neverdogs. Thanks to his passion for
-      electronic music his evolution has been very rapid. In 2011 he began his career in the radio at Espiral FM
-      Pamplona, ​taking the title of radio technician, with its "Tribal Beats" program. Currently he works for ÁTICA FM
-      in his new "Alegria Sessions" program.</p>
-    <p class="text-justify font-weight-bold">His sets and productions are very personal. Melodies, tribal influences, atmospheres, mixed with bases House,
-      Deep Techno actually get to those variations of rhythms and transmit unique sensations to the public.</p>
-  </div>
+<section class="container-fluid p-5 section--7 section section--bg col-lg-10 mx-auto" id="about">
+  <h2 class="text-left text-uppercase ">About</h2>
+  <hr class="mb-5">
+  <p class="text-justify font-weight-bold">Adrian Alegria is a young DJ and producer with an amazing projection.</p>
+  <p class="text-justify font-weight-bold">Born in Barakaldo (Vizcaya) currently living in Pamplona (Navarra). He started very young with the music, at 5
+    years he began with the piano and continued studying until the 15. Attracted by electronic music, he started
+    mixing on his own and did not take long to start his career as a DJ.</p>
+  <p class="text-justify font-weight-bold">It has undergone major clubs in the Basque Country, Navarra and La Rioja as Txitxarro, Itzela -Dcibelia,
+    Totem-Box, Movie Music Club, Pagoa, Crepusculo, Txuribeltz ... and also abroad, in London, in the Club No.65.</p>
+  <p class="text-justify font-weight-bold">Today is superior sound technician and his first productions already have tapped by international artists such as
+    Roger Sanchez, Cristian Varela, Tocadisco, De La Swing, Peter Gelderblom, Dennis Cruz ... and can be found on sale
+    through seals that have already opted for it as Doppelgaenger, Ritmikal Records, Ausara Recordings, Selectechouse
+    Label, DaMusic, Red Drum Music, Blum Recordings, Bullet Proof Records and so on. His productions are supported by
+    large artists as Marco Carola, Luciano, Dennis Cruz, Joseph Capriati or Neverdogs. Thanks to his passion for
+    electronic music his evolution has been very rapid. In 2011 he began his career in the radio at Espiral FM
+    Pamplona, ​taking the title of radio technician, with its "Tribal Beats" program. Currently he works for ÁTICA FM
+    in his new "Alegria Sessions" program.</p>
+  <p class="text-justify font-weight-bold">His sets and productions are very personal. Melodies, tribal influences, atmospheres, mixed with bases House,
+    Deep Techno actually get to those variations of rhythms and transmit unique sensations to the public.</p>
 </section>
 <?php get_footer(); ?>

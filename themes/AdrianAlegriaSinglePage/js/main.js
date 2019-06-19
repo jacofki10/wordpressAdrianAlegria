@@ -1,4 +1,15 @@
 
+// // //MobilePhone Menu hamburger
+var hamburger = document.querySelector(".hamburger");
+var hamburgerMenu = document.querySelector(".navbar-nav");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+});
+hamburgerMenu.onclick = function () {
+  hamburger.classList.toggle("is-active");
+}
+
 // // //pluging spotify
 var spotifyApi = new SpotifyWebApi();
 // get albums by a certain artist

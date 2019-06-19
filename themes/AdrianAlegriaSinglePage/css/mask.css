@@ -8,11 +8,10 @@
  .view .mask {
     position: absolute;
     top: 0;
-    left: 5;
  }
  .mask{
      height: 100%;
-     width: 100%;
+     width: 90%;
  }
 
  .view h2 {
