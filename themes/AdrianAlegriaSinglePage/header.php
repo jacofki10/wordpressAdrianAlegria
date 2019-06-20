@@ -122,11 +122,11 @@
     </div>
   </nav>
   <!--desktop-->
-  <div class="img-index container-fluid pl-0 section--1 section">
-    <div class="row m-0 pt-4">
+  <div class="img-index container-fluid pl-0 section--1 section ">
+    <div class="row m-0 pt-4 ">
       <!-- Navigation  desktop-->
       <nav class="col-3 d-none d-lg-block ">
-        <div><img src="https://adrianalegria.com/wp-content/uploads/2019/06/AdrianAlegriaLogo.png" alt="AdrianAlegria Logo" class="img-fluid"></div>
+        <div><img src="https://adrianalegria.com/wp-content/uploads/2019/06/AdrianAlegriaLogo.png" alt="AdrianAlegria Logo" class="img-fluid klanimate" data-delay="2"></div>
         <div class="menu fixed-top mt-5 ml-3 ">
           <div class="js-replace js-replace--reverse">
             <div class="js-replace__item js-replace__item--active">
@@ -189,9 +189,9 @@
         </div>
       </nav>
       <!-- Social media-->
-      <div class="col-9 px-0 d-none d-lg-block ">
+      <div class="col-9 px-0 d-none d-lg-block klanimate" data-delay="2">
         <ul class="list-inline float-right">
-          <li class="list-inline-item mx-0">
+          <li class="list-inline-item">
             <a href="https://www.facebook.com/adrianalegriaofficial" target="_blank" class="text-light">
               <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x "></i>
@@ -199,7 +199,7 @@
               </span>
             </a>
           </li>
-          <li class="list-inline-item mx-0">
+          <li class="list-inline-item">
             <a href="https://instagram.com/adrianalegriadj/" target="_blank" class="text-light">
               <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x "></i>
@@ -207,7 +207,7 @@
               </span>
             </a>
           </li>
-          <li class="list-inline-item mx-0">
+          <li class="list-inline-item">
             <a href="https://soundcloud.com/adrian-alegria" target="_blank" class="text-light">
               <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x "></i>
@@ -215,7 +215,7 @@
               </span>
             </a>
           </li>
-          <li class="list-inline-item mx-0">
+          <li class="list-inline-item">
             <a href="https://www.youtube.com/channel/UCHGwqkwO2lIR7h-oXLVRrUg" target="_blank" class="text-light">
               <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x "></i>
@@ -223,7 +223,7 @@
               </span>
             </a>
           </li>
-          <li class="list-inline-item mx-0">
+          <li class="list-inline-item">
             <a href="https://twitter.com/AdrianAlegriaDJ" target="_blank" class="text-light">
               <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x "></i>
@@ -231,7 +231,7 @@
               </span>
             </a>
           </li>
-          <li class="list-inline-item mx-0">
+          <li class="list-inline-item">
             <a href="https://www.mixcloud.com/adrianalegria/" target="_blank" class="text-light">
               <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x "></i>
@@ -239,7 +239,7 @@
               </span>
             </a>
           </li>
-          <li class="list-inline-item mx-0">
+          <li class="list-inline-item">
             <a href="https://open.spotify.com/artist/24w4dGFG8bDi3wG1qbnDM7" target="_blank" class="text-light">
               <span class="fa-stack fa-1x">
                 <i class="fas fa-circle fa-stack-2x "></i>

@@ -1,4 +1,10 @@
-
+// // //Letters Shuffle
+var shuffleText = jQuery('.logo');
+// Shuffle the contents of container
+setTimeout(function () {
+  // Shuffle the container with custom text
+  shuffleText.shuffleLetters();
+}, 2100);
 // // //MobilePhone Menu hamburger
 var hamburger = document.querySelector(".hamburger");
 var hamburgerMenu = document.querySelector(".navbar-nav");

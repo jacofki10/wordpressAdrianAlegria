@@ -35,6 +35,12 @@
    </div>
  </footer>
  <!---- Plugin JavaScript ---->
+ <!-- Scroll Animate JavaScript -->
+ <script src="<?php echo get_template_directory_uri(); ?>/js/klAnimate/greensock.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/klAnimate/kl-animate.min.js"></script>
+ <script>
+   jQuery.klAnimate();
+ </script>
  <!--Nav Color Change-->
  <script src="<?php echo get_template_directory_uri() . '/js/navColorChange.js'; ?>"></script>
  <!-- Scroll down JavaScript -->
@@ -42,10 +48,13 @@
  <script>
    var scrollDown = new SmoothScroll('a[href*="#"]');
  </script>
+ <!-- shuffleLetters JavaScript -->
+ <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.shuffleLetters.js"></script>
  <!-- Contact Form JavaScript -->
  <script src="<?php echo get_template_directory_uri(); ?>/js/mail/contact_me.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/js/mail/freelancer.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/js/mail/jqBootstrapValidation.js"></script>
+
  <?php wp_footer(); ?>
  </body>
 

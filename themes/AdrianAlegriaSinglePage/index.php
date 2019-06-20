@@ -1,39 +1,39 @@
 <?php get_header(); ?>
 <!-- Latest Albums / Singles -->
 <section class="container-fluid p-5 section--2 section section--bg col-lg-10 mx-auto" id="music">
-  <h2 class="text-left text-uppercase text-dark">Latest Albums / Singles</h2>
+  <h2 class="text-left text-uppercase text-dark klanimate" data-x="400" data-duration="2">Latest Albums / Singles</h2>
   <hr class="mb-3">
-  <ul id="grid" class="row"></ul>
+  <ul id="grid" class="row klanimate" data-duration="3" data-delay="1"></ul>
 </section>
 <!-- Radio -->
 <section class="img-brand container-fluid p-3 section--3 section" id="radio">
   <div class="col-lg-10 mx-auto py-5">
-    <h2 class="text-left text-uppercase text-white">Radio Podcasts</h2>
+    <h2 class="text-left text-uppercase text-white klanimate" data-x="400" data-duration="2">Radio Podcasts</h2>
     <hr class="mb-4">
-    <div class="col-md-7 p-0 mb-4 ">
+    <div class="col-md-7 p-0 mb-4 klanimate" data-duration="3" data-delay="1">
       <iframe width="100%" height="166" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/542429292&color=%2314110f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
-    <div class="col-md-7 p-0 mb-4 ">
+    <div class="col-md-7 p-0 mb-4 klanimate" data-duration="3" data-delay="1">
       <iframe width="100%" height="166" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/534026049&color=%2314110f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
-    <div class="col-md-7 p-0 mb-4 ">
+    <div class="col-md-7 p-0 mb-4 klanimate" data-duration="3" data-delay="1">
       <iframe width="100%" height="166" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/528658056&color=%2314110f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
-    <div class="col-md-7 p-5 text-center">
+    <div class="col-md-7 p-5 text-center klanimate" data-duration="2" data-delay="1">
       <button type="button" class="btn btn-outline-light btn-lg rounded-0">Show more</button>
     </div>
   </div>
 </section>
 <!--Photos-->
 <section class="container-fluid p-5 section--4 section section--bg  col-lg-10 mx-auto" id="photos">
-  <h2 class="text-left text-uppercase ">Photos</h2>
+  <h2 class="text-left text-uppercase klanimate" data-x="400" data-duration="2">Photos</h2>
   <hr class="mb-5">
-  <div id="instafeed" class="row">
+  <div id="instafeed" class="row klanimate" data-duration="3" data-delay="1">
   </div>
 </section>
 <!--Social Media-->
 <section class="container-fluid px-5 text-white bg-dark section--5 section">
-  <div class="col-lg-11 mx-auto">
+  <div class="col-lg-11 mx-auto klanimate" data-duration="3">
     <div class="row text-center">
       <div class="col-md-2 p-4">
         <a href="https://www.facebook.com/adrianalegriaofficial" target="_blank" class="text-light">
@@ -88,7 +88,7 @@
 </section>
 <!-- Gigs -->
 <section class="container-fluid p-5 text-center section--6 section section--bg col-lg-10 mx-auto" id="gigs">
-  <h2 class="text-left text-uppercase ">Gigs</h2>
+  <h2 class="text-left text-uppercase klanimate" data-x="400" data-duration="2">Gigs</h2>
   <hr class="mb-5">
   <?php
   $options = array('scope' => 'all', 'limit' => 5);
@@ -98,17 +98,17 @@
 <!--STORES-->
 <section class="img-store container-fluid p-3 section--7 section" id="stores">
   <div class="col-lg-10 mx-auto py-5">
-    <h2 class="text-uppercase text-white">Stores</h2>
-    <div class="col-md-7 p-0 mb-4  ml-auto">
+    <h2 class="text-uppercase text-white klanimate" data-x="400" data-duration="2">Stores</h2>
+    <div class="col-md-7 p-0 mb-4  ml-auto klanimate" data-duration="3" data-delay="1">
       <a href="https://itunes.apple.com/us/artist/adrian-alegria/id540608442"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/itunesMusic.png" alt="" class="img-fluid"></a>
     </div>
-    <div class="col-md-7 p-0 mb-4  ml-auto">
+    <div class="col-md-7 p-0 mb-4  ml-auto klanimate" data-duration="3" data-delay="1.2">
       <a href="https://www.beatport.com/artist/adrian-alegria/232753"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/beatportMusic.png" alt="" class="img-fluid"></a>
     </div>
-    <div class="col-md-7 p-0 mb-4  ml-auto">
+    <div class="col-md-7 p-0 mb-4  ml-auto klanimate" data-duration="3" data-delay="1.4">
       <a href="https://www.traxsource.com/artist/118712/adrian-alegria"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/traxsourceLogo.png" alt="" class="img-fluid"></a>
     </div>
-    <div class="col-md-7 p-0 mb-4  ml-auto">
+    <div class="col-md-7 p-0 mb-4  ml-auto klanimate" data-duration="3" data-delay="1.6">
       <a href="https://www.junodownload.com/artists/Adrian+Alegria"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/junoDownloadLogo.png" alt="" class="img-fluid"></a>
     </div>
   </div>
@@ -171,15 +171,15 @@
 </div>
 <!--About-->
 <section class="container-fluid p-5 section--7 section section--bg col-lg-10 mx-auto" id="about">
-  <h2 class="text-left text-uppercase ">About</h2>
+  <h2 class="text-left text-uppercase klanimate" data-x="400" data-duration="2">About</h2>
   <hr class="mb-5">
-  <p class="text-justify font-weight-bold">Adrian Alegria is a young DJ and producer with an amazing projection.</p>
-  <p class="text-justify font-weight-bold">Born in Barakaldo (Vizcaya) currently living in Pamplona (Navarra). He started very young with the music, at 5
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1">Adrian Alegria is a young DJ and producer with an amazing projection.</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.2">Born in Barakaldo (Vizcaya) currently living in Pamplona (Navarra). He started very young with the music, at 5
     years he began with the piano and continued studying until the 15. Attracted by electronic music, he started
     mixing on his own and did not take long to start his career as a DJ.</p>
-  <p class="text-justify font-weight-bold">It has undergone major clubs in the Basque Country, Navarra and La Rioja as Txitxarro, Itzela -Dcibelia,
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.4">It has undergone major clubs in the Basque Country, Navarra and La Rioja as Txitxarro, Itzela -Dcibelia,
     Totem-Box, Movie Music Club, Pagoa, Crepusculo, Txuribeltz ... and also abroad, in London, in the Club No.65.</p>
-  <p class="text-justify font-weight-bold">Today is superior sound technician and his first productions already have tapped by international artists such as
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.6">Today is superior sound technician and his first productions already have tapped by international artists such as
     Roger Sanchez, Cristian Varela, Tocadisco, De La Swing, Peter Gelderblom, Dennis Cruz ... and can be found on sale
     through seals that have already opted for it as Doppelgaenger, Ritmikal Records, Ausara Recordings, Selectechouse
     Label, DaMusic, Red Drum Music, Blum Recordings, Bullet Proof Records and so on. His productions are supported by
@@ -187,7 +187,7 @@
     electronic music his evolution has been very rapid. In 2011 he began his career in the radio at Espiral FM
     Pamplona, ​taking the title of radio technician, with its "Tribal Beats" program. Currently he works for ÁTICA FM
     in his new "Alegria Sessions" program.</p>
-  <p class="text-justify font-weight-bold">His sets and productions are very personal. Melodies, tribal influences, atmospheres, mixed with bases House,
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.9">His sets and productions are very personal. Melodies, tribal influences, atmospheres, mixed with bases House,
     Deep Techno actually get to those variations of rhythms and transmit unique sensations to the public.</p>
 </section>
 <?php get_footer(); ?>

@@ -8,7 +8,7 @@
 	If you're curious what all variables are available in the $showdata array, have a look at the docs: http://gigpress.com/docs/
 */
 ?>
-<div class="px-0 py-4 gigs">
+<div class="px-0 py-4 gigs klanimate" data-duration="3" data-delay="1">
 	<div class="row">
 		<a href="" class="col-12 col-lg-9 p-0">
 			<div class="row">
