@@ -10,15 +10,17 @@
   <div class="col-lg-10 mx-auto py-5">
     <h2 class="text-left text-uppercase text-white klanimate" data-x="400" data-duration="2">Radio Podcasts</h2>
     <hr class="mb-4">
-    <div class="col-md-7 p-0 mb-4 klanimate" data-duration="3" data-delay="1">
-      <iframe width="100%" height="166" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/542429292&color=%2314110f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-    </div>
-    <div class="col-md-7 p-0 mb-4 klanimate" data-duration="3" data-delay="1">
-      <iframe width="100%" height="166" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/534026049&color=%2314110f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-    </div>
-    <div class="col-md-7 p-0 mb-4 klanimate" data-duration="3" data-delay="1">
-      <iframe width="100%" height="166" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/528658056&color=%2314110f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-    </div>
+    <?php
+    $homePageRadio = new WP_Query(array(
+      'post_per_page' => 3,
+      'post_type' => 'radio'
+    ));
+    while ($homePageRadio->have_posts()) {
+      $homePageRadio->the_post(); ?>
+      <div class="col-md-7 p-0 mb-4 klanimate" data-duration="3" data-delay="1">
+        <?php the_title(); ?>
+      </div>
+    <?php } ?>
     <div class="col-md-7 p-5 text-center klanimate" data-duration="2" data-delay="1">
       <button type="button" class="btn btn-outline-light btn-lg rounded-0">Show more</button>
     </div>
