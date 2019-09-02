@@ -4,7 +4,7 @@ var shuffleText = jQuery('.logo');
 setTimeout(function () {
   // Shuffle the container with custom text
   shuffleText.shuffleLetters();
-}, 2100);
+}, 2000);
 // // //MobilePhone Menu hamburger
 var hamburger = document.querySelector(".hamburger");
 var hamburgerMenu = document.querySelector(".navbar-nav");

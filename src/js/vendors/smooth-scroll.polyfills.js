@@ -11,13 +11,13 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/closest#Polyfill
  */
 if (window.Element && !Element.prototype.closest) {
-	Element.prototype.closest = function(s) {
+	Element.prototype.closest = function (s) {
 		var matches = (this.document || this.ownerDocument).querySelectorAll(s),
 			i,
 			el = this;
 		do {
 			i = matches.length;
-			while (--i >= 0 && matches.item(i) !== el) {}
+			while (--i >= 0 && matches.item(i) !== el) { }
 		} while (i < 0 && (el = el.parentElement));
 		return el;
 	};
@@ -27,7 +27,7 @@ if (window.Element && !Element.prototype.closest) {
  * CustomEvent() polyfill
  * https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill
  */
-(function() {
+(function () {
 	if (typeof window.CustomEvent === 'function') return false;
 
 	function CustomEvent(event, params) {
@@ -53,7 +53,7 @@ if (window.Element && !Element.prototype.closest) {
  * @link http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
  * @license MIT
  */
-(function() {
+(function () {
 	var lastTime = 0;
 	var vendors = ['ms', 'moz', 'webkit', 'o'];
 	for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
@@ -64,10 +64,10 @@ if (window.Element && !Element.prototype.closest) {
 	}
 
 	if (!window.requestAnimationFrame) {
-		window.requestAnimationFrame = function(callback, element) {
+		window.requestAnimationFrame = function (callback, element) {
 			var currTime = new Date().getTime();
 			var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-			var id = window.setTimeout(function() {
+			var id = window.setTimeout(function () {
 				callback(currTime + timeToCall);
 			}, timeToCall);
 			lastTime = currTime + timeToCall;
@@ -76,15 +76,15 @@ if (window.Element && !Element.prototype.closest) {
 	}
 
 	if (!window.cancelAnimationFrame) {
-		window.cancelAnimationFrame = function(id) {
+		window.cancelAnimationFrame = function (id) {
 			clearTimeout(id);
 		};
 	}
 })();
 
-(function(root, factory) {
+(function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
-		define([], function() {
+		define([], function () {
 			return factory(root);
 		});
 	} else if (typeof exports === 'object') {
@@ -96,9 +96,9 @@ if (window.Element && !Element.prototype.closest) {
 	typeof global !== 'undefined'
 		? global
 		: typeof window !== 'undefined'
-		? window
-		: this,
-	function(window) {
+			? window
+			: this,
+	function (window) {
 		'use strict';
 
 		//
@@ -112,7 +112,7 @@ if (window.Element && !Element.prototype.closest) {
 			topOnEmptyHash: true,
 
 			// Speed & Duration
-			speed: 800,
+			speed: 500,
 			speedAsDuration: false,
 			durationMax: null,
 			durationMin: null,
@@ -139,7 +139,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * Check if browser supports required methods
 		 * @return {Boolean} Returns true if all required methods are supported
 		 */
-		var supports = function() {
+		var supports = function () {
 			return (
 				'querySelector' in document &&
 				'addEventListener' in window &&
@@ -153,9 +153,9 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param   {Object}   objects  The objects to merge together
 		 * @returns {Object}            Merged values of defaults and options
 		 */
-		var extend = function() {
+		var extend = function () {
 			var merged = {};
-			Array.prototype.forEach.call(arguments, function(obj) {
+			Array.prototype.forEach.call(arguments, function (obj) {
 				for (var key in obj) {
 					if (!obj.hasOwnProperty(key)) return;
 					merged[key] = obj[key];
@@ -168,7 +168,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * Check to see if user prefers reduced motion
 		 * @param  {Object} settings Script settings
 		 */
-		var reduceMotion = function(settings) {
+		var reduceMotion = function (settings) {
 			if (
 				'matchMedia' in window &&
 				window.matchMedia('(prefers-reduced-motion)').matches
@@ -183,7 +183,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param  {Node} elem The element to get the height of
 		 * @return {Number}    The element's height in pixels
 		 */
-		var getHeight = function(elem) {
+		var getHeight = function (elem) {
 			return parseInt(window.getComputedStyle(elem).height, 10);
 		};
 
@@ -193,7 +193,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @link https://github.com/mathiasbynens/CSS.escape
 		 * @param {String} id The anchor ID to escape
 		 */
-		var escapeCharacters = function(id) {
+		var escapeCharacters = function (id) {
 			// Remove leading hash
 			if (id.charAt(0) === '#') {
 				id = id.substr(1);
@@ -271,7 +271,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param {Number} time Time animation should take to complete
 		 * @returns {Number}
 		 */
-		var easingPattern = function(settings, time) {
+		var easingPattern = function (settings, time) {
 			var pattern;
 
 			// Default Easing Patterns
@@ -316,7 +316,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * Determine the document's height
 		 * @returns {Number}
 		 */
-		var getDocumentHeight = function() {
+		var getDocumentHeight = function () {
 			return Math.max(
 				document.body.scrollHeight,
 				document.documentElement.scrollHeight,
@@ -336,7 +336,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param {Boolean} clip         If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
 		 * @returns {Number}
 		 */
-		var getEndLocation = function(anchor, headerHeight, offset, clip) {
+		var getEndLocation = function (anchor, headerHeight, offset, clip) {
 			var location = 0;
 			if (anchor.offsetParent) {
 				do {
@@ -356,7 +356,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param  {Node}   header The header
 		 * @return {Number}        The height of the header
 		 */
-		var getHeaderHeight = function(header) {
+		var getHeaderHeight = function (header) {
 			return !header ? 0 : getHeight(header) + header.offsetTop;
 		};
 
@@ -366,7 +366,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param  {Object} settings The plugin settings
 		 * @return {Number}          How fast to animate
 		 */
-		var getSpeed = function(distance, settings) {
+		var getSpeed = function (distance, settings) {
 			var speed = settings.speedAsDuration
 				? settings.speed
 				: Math.abs((distance / 1000) * settings.speed);
@@ -377,7 +377,7 @@ if (window.Element && !Element.prototype.closest) {
 			return parseInt(speed, 10);
 		};
 
-		var setHistory = function(options) {
+		var setHistory = function (options) {
 			// Make sure this should run
 			if (!history.replaceState || !options.updateURL || history.state) return;
 
@@ -402,7 +402,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param  {Boolean} isNum   If true, anchor is a number
 		 * @param  {Object}  options Settings for Smooth Scroll
 		 */
-		var updateURL = function(anchor, isNum, options) {
+		var updateURL = function (anchor, isNum, options) {
 			// Bail if the anchor is a number
 			if (isNum) return;
 
@@ -426,7 +426,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param {Number}   endLocation The end location to scroll to
 		 * @param {Boolean}  isNum       If true, scroll is to a position rather than an element
 		 */
-		var adjustFocus = function(anchor, endLocation, isNum) {
+		var adjustFocus = function (anchor, endLocation, isNum) {
 			// Is scrolling to top of page, blur
 			if (anchor === 0) {
 				document.body.focus();
@@ -452,7 +452,7 @@ if (window.Element && !Element.prototype.closest) {
 		 * @param  {Node}   anchor  The anchor element
 		 * @param  {Node}   toggle  The toggle element
 		 */
-		var emitEvent = function(type, options, anchor, toggle) {
+		var emitEvent = function (type, options, anchor, toggle) {
 			if (!options.emitEvents || typeof window.CustomEvent !== 'function')
 				return;
 			var event = new CustomEvent(type, {
@@ -469,7 +469,7 @@ if (window.Element && !Element.prototype.closest) {
 		// SmoothScroll Constructor
 		//
 
-		var SmoothScroll = function(selector, options) {
+		var SmoothScroll = function (selector, options) {
 			//
 			// Variables
 			//
@@ -489,7 +489,7 @@ if (window.Element && !Element.prototype.closest) {
 			/**
 			 * Cancel a scroll-in-progress
 			 */
-			smoothScroll.cancelScroll = function(noEvent) {
+			smoothScroll.cancelScroll = function (noEvent) {
 				cancelAnimationFrame(animationInterval);
 				animationInterval = null;
 				if (noEvent) return;
@@ -502,7 +502,7 @@ if (window.Element && !Element.prototype.closest) {
 			 * @param {Element}     toggle  The element that toggled the scroll event
 			 * @param {Object}      options
 			 */
-			smoothScroll.animateScroll = function(anchor, toggle, options) {
+			smoothScroll.animateScroll = function (anchor, toggle, options) {
 				// Cancel any in progress scrolls
 				smoothScroll.cancelScroll();
 
@@ -525,16 +525,16 @@ if (window.Element && !Element.prototype.closest) {
 				var endLocation = isNum
 					? anchor
 					: getEndLocation(
-							anchorElem,
-							headerHeight,
-							parseInt(
-								typeof _settings.offset === 'function'
-									? _settings.offset(anchor, toggle)
-									: _settings.offset,
-								10
-							),
-							_settings.clip
-					  ); // Location to scroll to
+						anchorElem,
+						headerHeight,
+						parseInt(
+							typeof _settings.offset === 'function'
+								? _settings.offset(anchor, toggle)
+								: _settings.offset,
+							10
+						),
+						_settings.clip
+					); // Location to scroll to
 				var distance = endLocation - startLocation; // distance to travel
 				var documentHeight = getDocumentHeight();
 				var timeLapsed = 0;
@@ -547,7 +547,7 @@ if (window.Element && !Element.prototype.closest) {
 				 * @param {Number} endLocation Scroll to location
 				 * @param {Number} animationInterval How much to scroll on this loop
 				 */
-				var stopAnimateScroll = function(position, endLocation) {
+				var stopAnimateScroll = function (position, endLocation) {
 					// Get the current location
 					var currentLocation = window.pageYOffset;
 
@@ -578,7 +578,7 @@ if (window.Element && !Element.prototype.closest) {
 				/**
 				 * Loop scrolling animation
 				 */
-				var loopAnimateScroll = function(timestamp) {
+				var loopAnimateScroll = function (timestamp) {
 					if (!start) {
 						start = timestamp;
 					}
@@ -616,7 +616,7 @@ if (window.Element && !Element.prototype.closest) {
 			/**
 			 * If smooth scroll element clicked, animate scroll
 			 */
-			var clickHandler = function(event) {
+			var clickHandler = function (event) {
 				// Don't run if the user prefers reduced motion
 				if (reduceMotion(settings)) return;
 
@@ -664,7 +664,7 @@ if (window.Element && !Element.prototype.closest) {
 			/**
 			 * Animate scroll on popstate events
 			 */
-			var popstateHandler = function(event) {
+			var popstateHandler = function (event) {
 				// Stop if history.state doesn't exist (ex. if clicking on a broken anchor link).
 				// fixes `Cannot read property 'smoothScroll' of null` error getting thrown.
 				if (history.state === null) return;
@@ -696,7 +696,7 @@ if (window.Element && !Element.prototype.closest) {
 			/**
 			 * Destroy the current initialization.
 			 */
-			smoothScroll.destroy = function() {
+			smoothScroll.destroy = function () {
 				// If plugin isn't already initialized, stop
 				if (!settings) return;
 
@@ -720,7 +720,7 @@ if (window.Element && !Element.prototype.closest) {
 			 * Initialize Smooth Scroll
 			 * @param {Object} options User settings
 			 */
-			smoothScroll.init = function(options) {
+			smoothScroll.init = function (options) {
 				// feature test
 				if (!supports())
 					throw 'Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.';

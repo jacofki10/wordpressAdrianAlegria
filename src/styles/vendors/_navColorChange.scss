@@ -7,85 +7,79 @@
     /* this value is going to be changed by javascript */
     --replace-offset: 50%;
     --replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
-  }
-
-
-  /* Sticky Footer */
- .logo{
+}
+/* Sticky Footer */
+.logo{
     color: var(--white);
-    list-style-type: none;
     font-size: 14px;
-    line-height: 1.25em;
     letter-spacing: 3px;
-    padding: 20px 0;
- }
+    display: block;
+    margin: 30px 0;
+}
 
-  .logo--invert {
+.logo--invert {
     color: var(--black);
-    list-style-type: none;
     font-size: 14px;
-    line-height: 1.25em;
     letter-spacing: 3px;
-    padding: 20px 0;
-  }
+     display: block;
+    margin: 30px 0;
+}
 
-  .home.active{
+.home.active{
       color: red;
-  }
+}
 
   /**
     This is the interesting part
   **/
 
-  /* align content above each other without absolute */
-  .js-replace {
+/* align content above each other without absolute */
+.js-replace {
     display: grid;
-  }
+}
 
-  .js-replace__item {
+.js-replace__item {
     grid-row: -1 / 1;
     grid-column: -1 / 1;
     overflow: hidden;
     will-change: transform;
-  }
+}
 
   /* item to replace with */
-  .js-replace__item {
+.js-replace__item {
     transform: translateY(calc(var(--replace-offset) * 1));
-  }
-  .js-replace__content {
+}
+.js-replace__content {
     /* fixes problem with calculating correct height in js */
     border: 1px solid transparent;
     will-change: transform;
-
     transform: translateY(calc(var(--replace-offset) * -1));
-  }
+}
 
   /* previous replace item*/
-  .js-replace__item--active {
+.js-replace__item--active {
     transform: translateY(calc(var(--replace-offset-2) * 1));
-  }
-  .js-replace__item--active .js-replace__content {
+}
+.js-replace__item--active .js-replace__content {
     transform: translateY(calc(var(--replace-offset-2) * -1));
-  }
-
+}
 
   /* REVERSE ANIMATION */
-  .js-replace--reverse
-  .js-replace__item {
+.js-replace--reverse
+.js-replace__item {
     transform: translateY(calc(var(--replace-offset-2) * 1));
-  }
-  .js-replace--reverse
-  .js-replace__content {
+}
+.js-replace--reverse
+.js-replace__content {
     transform: translateY(calc(var(--replace-offset-2) * -1));
-  }
+}
 
   /* previous replace item*/
-  .js-replace--reverse
-  .js-replace__item--active {
+.js-replace--reverse
+.js-replace__item--active {
     transform: translateY(calc(var(--replace-offset) * 1));
-  }
-  .js-replace--reverse
-  .js-replace__item--active .js-replace__content {
+}
+.js-replace--reverse
+.js-replace__item--active .js-replace__content {
     transform: translateY(calc(var(--replace-offset) * -1));
-  }
+}

@@ -1,0 +1,65 @@
+/*latest album*/
+
+/*Radio*/
+.img-brand
+    +backgroundImage("https://adrianalegria.com/wp-content/uploads/2019/06/fondo.adrianalegriaThinking.jpg", right)
+
+/*photos*/
+
+/*Gigs*/
+.gigs
+    border-bottom: 0.5mm ridge rgba(255, 255, 255, 0.6)
+    a, a:visited
+         color: var($second-color)
+
+.dia
+    font-size: 60px
+    line-height: 1em
+    letter-spacing: -1px
+    font-weight: 600
+
+.mes span
+    display: block
+    font-size: 20px
+
+/*Stores*/
+.img-store
+    +backgroundImage("https://adrianalegria.com/wp-content/uploads/2019/06/fondo.adrianalegriaPower.jpg", left)
+
+/*Booking*/
+.floating-label-form-group
+    position: relative
+    border-bottom: 1px solid #e9ecefs
+    input,
+    textarea
+        font-size: 1.5em
+        position: relative
+        z-index: 1
+        padding-right: 0
+        padding-left: 0
+        resize: none
+        border: none
+        border-radius: 0
+        background: none
+        box-shadow: none !important
+    label
+        font-size: 0.85em
+        line-height: 1.764705882em
+        position: relative
+        z-index: 0
+        top: 2em
+        display: block
+        margin: 0
+        transition: top 0.3s ease, opacity 0.3s ease
+        opacity: 0
+    &:not(:first-child)
+        padding-left: 14px
+        border-left: 1px solid #e9ecef
+
+.floating-label-form-group-with-value label
+        top: 0
+        opacity: 1
+
+.floating-label-form-group-with-focus label
+        color: #18BC9C
+

@@ -36,25 +36,24 @@
  </footer>
  <!---- Plugin JavaScript ---->
  <!-- Scroll Animate JavaScript -->
- <script src="<?php echo get_template_directory_uri(); ?>/js/klAnimate/greensock.js"></script>
- <script src="<?php echo get_template_directory_uri(); ?>/js/klAnimate/kl-animate.min.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/vendors/klAnimate/greensock.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/vendors/klAnimate/kl-animate.min.js"></script>
  <script>
    jQuery.klAnimate();
  </script>
  <!--Nav Color Change-->
- <script src="<?php echo get_template_directory_uri() . '/js/navColorChange.js'; ?>"></script>
+ <script src="<?php echo get_template_directory_uri() . '/js/vendors/navColorChange.js'; ?>"></script>
  <!-- Scroll down JavaScript -->
- <script src="<?php echo get_template_directory_uri() . '/js/smooth-scroll.polyfills.js'; ?>"></script>
+ <script src="<?php echo get_template_directory_uri() . '/js/vendors/smooth-scroll.polyfills.js'; ?>"></script>
  <script>
    var scrollDown = new SmoothScroll('a[href*="#"]');
  </script>
  <!-- shuffleLetters JavaScript -->
- <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.shuffleLetters.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/vendors/jquery.shuffleLetters.js"></script>
  <!-- Contact Form JavaScript -->
- <script src="<?php echo get_template_directory_uri(); ?>/js/mail/contact_me.js"></script>
- <script src="<?php echo get_template_directory_uri(); ?>/js/mail/freelancer.js"></script>
- <script src="<?php echo get_template_directory_uri(); ?>/js/mail/jqBootstrapValidation.js"></script>
-
+ <script src="<?php echo get_template_directory_uri(); ?>/js/vendors/mail/contact_me.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/vendors/mail/freelancer.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/vendors/mail/jqBootstrapValidation.js"></script>
  <?php wp_footer(); ?>
  </body>
 
