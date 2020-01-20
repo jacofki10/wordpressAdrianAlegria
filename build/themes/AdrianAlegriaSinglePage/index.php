@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 <!-- Latest Albums / Singles -->
 <section class="container-fluid p-5 section--2 section section--bg col-lg-10 mx-auto" id="music">
-  <h2 class="text-left text-uppercase text-dark klanimate" data-x="400" data-duration="1.8">Latest Albums / Singles</h2>
+  <h2 class="text-left text-uppercase text-dark klanimate" data-duration="1.8">Latest Albums / Singles</h2>
   <hr class="mb-3">
   <ul id="grid" class="row klanimate pl-0" data-duration="3" data-delay="0.5"></ul>
 </section>
 <!-- Radio -->
 <section class="img-brand container-fluid p-3 section--3 section" id="radio">
   <div class="col-lg-10 mx-auto py-5">
-    <h2 class="text-left text-uppercase text-white klanimate" data-x="400" data-duration="1.8">Radio Podcasts</h2>
+    <h2 class="text-left text-uppercase text-white klanimate" data-duration="1.8">Radio Podcasts</h2>
     <hr class="mb-4">
     <?php
     $homePageRadio = new WP_Query(array(
@@ -28,7 +28,7 @@
 </section>
 <!--Photos-->
 <section class="container-fluid p-5 section--4 section section--bg  col-lg-10 mx-auto" id="photos">
-  <h2 class="text-left text-uppercase klanimate" data-x="400" data-duration="2">Photos</h2>
+  <h2 class="text-left text-uppercase klanimate" data-duration="2">Photos</h2>
   <hr class="mb-5">
   <div id="instafeed" class="row klanimate" data-duration="3" data-delay="0.5">
   </div>
@@ -88,7 +88,7 @@
 </section>
 <!-- Gigs -->
 <section class="container-fluid p-5 text-center section--6 section section--bg col-lg-10 mx-auto" id="gigs">
-  <h2 class="text-left text-uppercase klanimate" data-x="400" data-duration="2">Gigs</h2>
+  <h2 class="text-left text-uppercase klanimate" data-duration="2">Gigs</h2>
   <hr class="mb-5">
   <?php
   $options = array('scope' => 'all', 'limit' => 5);
@@ -98,7 +98,7 @@
 <!--STORES-->
 <section class="img-store container-fluid p-3 section--7 section" id="stores">
   <div class="col-lg-10 mx-auto py-5">
-    <h2 class="text-uppercase text-white klanimate" data-x="400" data-duration="2">Stores</h2>
+    <h2 class="text-uppercase text-white klanimate" data-duration="2">Stores</h2>
     <div class="col-md-7 p-0 mb-4  ml-auto klanimate" data-duration="3" data-delay="0.5">
       <a href="https://itunes.apple.com/us/artist/adrian-alegria/id540608442"><img src="https://adrianalegria.com/wp-content/uploads/2019/06/itunesMusic.png" alt="Itunes Store Logo" class="img-fluid"></a>
     </div>
@@ -171,7 +171,7 @@
 </div>
 <!--About-->
 <section class="container-fluid p-5 section--7 section section--bg col-lg-10 mx-auto" id="about">
-  <h2 class="text-left text-uppercase klanimate" data-x="400" data-duration="2">About</h2>
+  <h2 class="text-left text-uppercase klanimate" data-duration="2">About</h2>
   <hr class="mb-5">
   <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.5">Adrian Alegria is a young DJ and producer with an amazing projection.</p>
   <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.7">Born in Barakaldo (Vizcaya) currently living in Pamplona (Navarra). He started very young with the music, at 5

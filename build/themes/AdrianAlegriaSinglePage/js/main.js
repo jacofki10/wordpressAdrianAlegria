@@ -32,11 +32,11 @@ spotifyContainer = document.getElementById('grid'),
     });
 
 //pluging instagram
-var token = '2104073551.1677ed0.baa1b703d5fc4389aad405ff02039ffc',
+var token = '2104073551.1677ed0.0e36827322844e9f94b860cb1f922f8c',
   client_id = '25864e713d914f66b5375607797b8bba',
   hashtag = 'adrianalegriadj', // hashtag without # symbol
   num_photos = 13, // maximum 20
-  container = document.getElementById('instafeed'), // it is our <ul id="rudr_instafeed">
+  container = document.getElementById('instafeed'),
   scrElement = document.createElement('script');
 
 window.mishaProcessResult = function (data) {
