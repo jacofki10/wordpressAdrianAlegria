@@ -56,9 +56,9 @@
           <li class="nav-item m-3">
             <a data-easing="easeInOutQuad" href="#radio" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">RADIO</a>
           </li>
-          <li class="nav-item m-3">
+          <!-- <li class="nav-item m-3">
             <a data-easing="easeInOutQuad" href="#photos" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">PHOTOS</a>
-          </li>
+          </li> -->
           <li class="nav-item m-3">
             <a data-easing="easeInOutQuad" href="#gigs" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">GIGS</a>
           </li>
@@ -66,7 +66,7 @@
             <a data-easing="easeInOutQuad" href="#stores" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">STORES</a>
           </li>
           <li class="nav-item m-3">
-            <a data-easing="easeInOutQuad" href="#booking" data-toggle="modal" data-target="#bookingModal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">BOOKING</a>
+            <a data-easing="easeInOutQuad" href="#booking" data-toggle="modal" data-target="#bookingModal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">CONTACT</a>
           </li>
           <li class="nav-item m-3">
             <a data-easing="easeInOutQuad" href="#about" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">ABOUT</a>
@@ -125,10 +125,10 @@
             <a data-easing="easeInOutQuad" href="#home" class="logo">HOME</a>
             <a data-easing="easeInOutQuad" href="#music" class="logo">MUSIC</a>
             <a data-easing="easeInOutQuad" href="#radio" class="logo">RADIO</a>
-            <a data-easing="easeInOutQuad" href="#photos" class="logo">PHOTOS</a>
+            <!-- <a data-easing="easeInOutQuad" href="#photos" class="logo">PHOTOS</a> -->
             <a data-easing="easeInOutQuad" href="#gigs" class="logo">GIGS</a>
             <a data-easing="easeInOutQuad" href="#stores" class="logo">STORES</a>
-            <a data-easing="easeInOutQuad" href="#booking" class="logo" data-toggle="modal" data-target="#bookingModal">BOOKING</a>
+            <a data-easing="easeInOutQuad" href="#booking" class="logo" data-toggle="modal" data-target="#bookingModal">CONTACT</a>
             <a data-easing="easeInOutQuad" href="#about" class="logo">ABOUT</a>
           </div>
         </div>
@@ -137,10 +137,10 @@
             <a data-easing="easeInOutQuad" href="#home" class="logo--invert">HOME</a>
             <a data-easing="easeInOutQuad" href="#music" class="logo--invert">MUSIC </a>
             <a data-easing="easeInOutQuad" href="#radio" class="logo--invert">RADIO </a>
-            <a data-easing="easeInOutQuad" href="#photos" class="logo--invert">PHOTOS </a>
+            <!-- <a data-easing="easeInOutQuad" href="#photos" class="logo--invert">PHOTOS </a> -->
             <a data-easing="easeInOutQuad" href="#gigs" class="logo--invert">GIGS </a>
             <a data-easing="easeInOutQuad" href="#stores" class="logo--invert">STORES </a>
-            <a data-easing="easeInOutQuad" href="#booking" class="logo--invert" data-toggle="modal" data-target="#bookingModal">BOOKING </a>
+            <a data-easing="easeInOutQuad" href="#booking" class="logo--invert" data-toggle="modal" data-target="#bookingModal">CONTACT </a>
             <a data-easing="easeInOutQuad" href="#about" class="logo--invert">ABOUT </a>
           </div>
         </div>

@@ -12,7 +12,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 
 // Create the email and send the message
 $to = "info@adrianalegria.com"; // Add your email address inbetween the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
-$subject = "Website Booking:  $name";
+$subject = "Website Contact:  $name";
 $body = "Has recibido un nuevo mensaje en tu pagina web.\n\n" . "Estos son los detalles:\n\nNombre: $name\n\n-Email: $email\n\n-Telefono: $phone\n\n-Mensaje:$message";
 $header = "De: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $header .= "Contesta: $email";

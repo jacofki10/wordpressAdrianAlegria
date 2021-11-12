@@ -27,12 +27,12 @@
   </div>
 </section>
 <!--Photos-->
-<section class="container-fluid p-5 section--4 section section--bg  col-lg-10 mx-auto" id="photos">
+<!-- <section class="container-fluid p-5 section--4 section section--bg  col-lg-10 mx-auto" id="photos">
   <h2 class="text-left text-uppercase klanimate" data-duration="2">Photos</h2>
   <hr class="mb-5">
   <div id="instafeed" class="row klanimate" data-duration="3" data-delay="0.5">
   </div>
-</section>
+</section> -->
 <!--Social Media-->
 <section class="container-fluid px-5 text-white bg-dark section--5 section">
   <div class="col-lg-11 mx-auto klanimate row text-center" data-duration="3">
@@ -173,21 +173,14 @@
 <section class="container-fluid p-5 section--7 section section--bg col-lg-10 mx-auto" id="about">
   <h2 class="text-left text-uppercase klanimate" data-duration="2">About</h2>
   <hr class="mb-5">
-  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.5">Adrian Alegria is a young DJ and producer with an amazing projection.</p>
-  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.7">Born in Barakaldo (Vizcaya) currently living in Pamplona (Navarra). He started very young with the music, at 5
-    years he began with the piano and continued studying until the 15. Attracted by electronic music, he started
-    mixing on his own and did not take long to start his career as a DJ.</p>
-  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.9">It has undergone major clubs in the Basque Country, Navarra and La Rioja as Txitxarro, Itzela -Dcibelia,
-    Totem-Box, Movie Music Club, Pagoa, Crepusculo, Txuribeltz ... and also abroad, in London, in the Club No.65.</p>
-  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.1">Today is superior sound technician and his first productions already have tapped by international artists such as
-    Roger Sanchez, Cristian Varela, Tocadisco, De La Swing, Peter Gelderblom, Dennis Cruz ... and can be found on sale
-    through seals that have already opted for it as Doppelgaenger, Ritmikal Records, Ausara Recordings, Selectechouse
-    Label, DaMusic, Red Drum Music, Blum Recordings, Bullet Proof Records and so on. His productions are supported by
-    large artists as Marco Carola, Luciano, Dennis Cruz, Joseph Capriati or Neverdogs. Thanks to his passion for
-    electronic music his evolution has been very rapid. In 2011 he began his career in the radio at Espiral FM
-    Pamplona, ​taking the title of radio technician, with its "Tribal Beats" program. Currently he works for ÁTICA FM
-    in his new "Alegria Sessions" program.</p>
-  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.3">His sets and productions are very personal. Melodies, tribal influences, atmospheres, mixed with bases House,
-    Deep Techno actually get to those variations of rhythms and transmit unique sensations to the public.</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.5">ESP</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.5">
+    Adrian Alegria es un joven compositor y DJ vasco con una gran proyección. Su música ha sonado en sesiones de artistas de la talla de Roger Sanchez, Cristian Varela o Tocadisco y ha conseguido incluir varios de sus lanzamientos entre las listas de los más vendidos. Ha actuado en importantes cabinas de España y del extranjero, en Londres, habiendo sido residente habitual en varias salas como Txitxarro, Itzela-Dcibelia o Sala Totem.</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.7">Pianista desde los 5 años, poco a poco se fue adentrando en el mundo de la música electrónica. Su sonido personal, con bases House, Deep o Techno, influenciado por sonidos afro, funk, jazz o étnico, consigue transmitir sensaciones únicas al público. Sus producciones se pueden encontrar en sellos discográficos como Piston Recordings, Younan Music o SELECTECHouse Label, que ya han apostado por su talento. También es locutor de radio en ATICA FM, con su programa Alegria Sessions.</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="0.9">Actualmente está trabajando en nuevo material para su próximo album.</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1">ING</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.1">Adrian Alegria is a young composer and DJ from the Basque Country who has a huge projection. Some of his works have made it to best-selling lists and artists like Roger Sanchez, Cristian Varela or Tocadisco have played his music in their sessions. He has played in many relevant cabines in Spain and London, and he has been the resident DJ in Txitarro, Itzela-Dcibelia and Sala Totem.</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.3">Pianist since he was 5, he slowly introduced into electronic music. His personal sound mixes House, Deep and Techno bases with afro, funk, jazz and ethnic music; transmiting unique feelings to the audience. His works can be found in record labels like Piston Recording, Younan Music or SELECTECHouse which have already worked with him. He also works in the radio: he has a program called Alegria Sessions in ATICA FM.</p>
+  <p class="text-justify font-weight-bold klanimate" data-duration="3" data-delay="1.5">At the moment he is working on some stuff for his next project.</p>
 </section>
 <?php get_footer(); ?>
